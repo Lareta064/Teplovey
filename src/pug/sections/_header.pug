@@ -1,0 +1,97 @@
+header.header
+	// HEADER TOP ROW
+	.header-top
+		.container
+			.flex-row
+				.header-top__title
+					p общество с ограниченной ответственностью
+					h2.h2 Научно-Производственное Объединение
+				a(href="index.html").logo
+					img(src="./img/logo.webp", width="430" height="85" alt="logo")
+				.header-top__contacts.txt-center
+					a(href="+73512200530").special-link
+						span.txt-light +7 (351)
+						span.txt-bold 220-05-30
+					a.btn-cbpopup.roboto-accent(href="#!") Заказать звонок
+	// HEADER BOTTOM ROW
+	.header-bottom
+		.container
+			.header-menu.drop-menu
+				ul.level-1
+					li.active
+						a(href="index.html").menu-link.menu-link--icon
+							svg.svg-home
+								use(href='./img/sprite.svg#svg-home')
+					li.drop-menu.drop-menu_2
+						a(href="aboutus.html").menu-link О компании
+						span.drop-icon
+						// второй  уровень
+						.submenu.submenu--medium.submenu-2
+							ul
+								li
+									a(href="#!") О компании
+								li
+									a(href="#!") Качество
+								li
+									a(href="#!") Разрешительные документы
+								li
+									a(href="#!") Дипломы, патенты, авторские свидетельства
+								li
+									a(href="#!") Дилеры и партнеры
+								li
+									a(href="#!") Опросные листы
+								li
+									a(href="#!") Пресса о нас
+								li
+									a(href="#!") Обзоры и статьи
+					// пункт меню №1 с подменю уровня
+					li.drop-menu.drop-menu_2
+						a(href="#!").menu-link Продукция и решения
+						span.drop-icon
+						// второй  уровень
+						.submenu.submenu--medium.submenu-2
+							ul
+								li.drop-menu.drop-menu_3
+									a(href="#!") submenu-2
+									span.drop-icon
+									// третий уровень 
+									.submenu.submenu-3
+										ul
+											li.drop-menu.drop-menu_4
+												a(href="#!") submenu-3
+												span.drop-icon
+												.submenu.submenu-4
+													ul
+														li
+															a(href="#!") submenu-4
+											
+											
+											li
+												a(href="#!") submenu-3
+					li
+						a(href="#!").menu-link Наши услуги
+					
+					li.drop-menu.drop-menu_2
+						a(href="#!").menu-link Выполненные проекты
+						span.drop-icon
+						// второй  уровень
+						.submenu.submenu--last.submenu-2
+							ul
+								li.drop-menu.drop-menu_3
+									a(href="#!") Второй уровень1
+									span.drop-icon
+									// третий уровень 
+									.submenu.submenu-3
+										ul
+											li
+												a(href="#!") Третий  уровень1
+											li
+												a(href="#!") Третий  уровень2
+											li
+												a(href="#!") Третий  уровень2
+												
+					li
+						a(href="#!").menu-link
+							svg.svg-phone
+								use(href='./img/sprite.svg#svg-phone')
+							| Kонтакты

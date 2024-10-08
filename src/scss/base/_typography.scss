@@ -1,0 +1,24 @@
+.h2{
+	font-size: 18px;
+	line-height: 1.05;
+	text-transform: uppercase;
+	font-family: $fs;
+	font-weight: 700;
+}
+.roboto-accent{
+	font-family: $ft;
+}
+.txt-accent, .roboto-accent{color: $accent;}
+.txt-light{font-weight: 100;}
+.txt-bold {font-weight: 700;}
+.txt-center{text-align: center;}
+
+.special-link{
+	font-size: 29px;
+	font-family: $ft;
+	font-weight: 1.05;
+	.txt-bold{padding-left: 5px;}
+	@media (max-width: 1199px) {
+	  font-size: 24px;
+	}
+}

@@ -28,7 +28,16 @@
 	-ms-touch-action: none;
 	height: 100vh;
   }
-  
+  .page-wrapper{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    .header, .footer, main{width: 100%;flex-shrink:0}
+    main{
+      flex-grow:1;
+      flex-shrink: 1;
+    }
+  }
   a{color: inherit; display: inline-block;}
   a,
   a:hover {

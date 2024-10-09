@@ -18,11 +18,11 @@ header.header
 		.container
 			.header-menu.drop-menu
 				ul.level-1
-					li.active
+					li.menu-item.active
 						a(href="index.html").menu-link.menu-link--icon
 							svg.svg-home
 								use(href='./img/sprite.svg#svg-home')
-					li.drop-menu.drop-menu_2
+					li.menu-item.drop-menu.drop-menu_2
 						a(href="aboutus.html").menu-link О компании
 						span.drop-icon
 						// второй  уровень
@@ -45,7 +45,7 @@ header.header
 								li
 									a(href="#!") Обзоры и статьи
 					// пункт меню №1 с подменю уровня
-					li.drop-menu.drop-menu_2
+					li.menu-item.drop-menu.drop-menu_2
 						a(href="#!").menu-link Продукция и решения
 						span.drop-icon
 						// второй  уровень
@@ -68,29 +68,14 @@ header.header
 											
 											li
 												a(href="#!") submenu-3
-					li
+					li.menu-item
 						a(href="#!").menu-link Наши услуги
 					
-					li.drop-menu.drop-menu_2
+					li.menu-item
 						a(href="#!").menu-link Выполненные проекты
-						span.drop-icon
-						// второй  уровень
-						.submenu.submenu--last.submenu-2
-							ul
-								li.drop-menu.drop-menu_3
-									a(href="#!") Второй уровень1
-									span.drop-icon
-									// третий уровень 
-									.submenu.submenu-3
-										ul
-											li
-												a(href="#!") Третий  уровень1
-											li
-												a(href="#!") Третий  уровень2
-											li
-												a(href="#!") Третий  уровень2
+						
 												
-					li
+					li.menu-item
 						a(href="#!").menu-link
 							svg.svg-phone
 								use(href='./img/sprite.svg#svg-phone')

@@ -74,5 +74,33 @@ document.addEventListener("DOMContentLoaded", function () {
 	for (let item of openMenuLevel4) {
 		showSubmenu(item, '.submenu-4');
 	}
+	
+	// const lastDropMenuLevel3 = document.querySelector(".submenu--last .submenu-3");
+	// const lastDropMenuLevel4 = document.querySelector(".submenu--last .submenu-4");
+
+	// const mediumDropMenuLevel3 = document.querySelector(".submenu--medium .submenu-3");
+	// const mediumDropMenuLevel4 = document.querySelector(".submenu--medium .submenu-4");
+
+	// if (window.innerWidth > 991 && window.innerWidth < 1440) {
+	// 	if (lastDropMenuLevel3) {
+	// 		lastDropMenuLevel3.classList.add('open-left')
+	// 	}
+
+	// 	if (lastDropMenuLevel4) {
+	// 		lastDropMenuLevel4.classList.remove('open-left')
+	// 	}
+	// 	if (mediumDropMenuLevel4) {
+	// 		lastDropMenuLevel4.classList.add('open-left')
+	// 	}
+	// }
+	// if (window.innerWidth > 1900) {
+	// 	if (lastDropMenuLevel3) {
+	// 		lastDropMenuLevel3.classList.remove('open-left')
+	// 	}
+	// 	if (lastDropMenuLevel4) {
+	// 		lastDropMenuLevel4.classList.add('open-left')
+	// 	}
+
+	// }
 
 });

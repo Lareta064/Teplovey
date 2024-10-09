@@ -1,5 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+    // моб меню - показать по клику га бургер-иконку
+	const bodyEl = document.body;
+	const mobMenu = document.querySelector('#mob-menu');
+	const mobMenuOpen = document.querySelector('#toggle-menu');
+	const mobMenuClose = document.querySelector('#close-menu');
+	
+	if(mobMenu){
+		mobMenuOpen.addEventListener('click',()=>{
+			mobMenu.classList.add('active');
+			bodyEl.classList.add('lock');
+		});
+		mobMenuClose.addEventListener('click',()=>{
+			mobMenu.classList.remove('active');
+			bodyEl.classList.remove('lock');
+		});
+	}
 	// моб меню - показать выпадающие меню
 	const openMenuLevel2 = document.querySelectorAll('.drop-menu_2');
 	const openMenuLevel3 = document.querySelectorAll('.drop-menu_3');

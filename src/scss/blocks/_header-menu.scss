@@ -21,7 +21,7 @@
 			display: block;
 			height: auto;
 			width: 100%;
-			padding-right: 20px;
+			padding-right: 14px;
 		}
 
 		li {
@@ -285,8 +285,6 @@ li.drop-menu_4:hover .submenu-5 {
 	@media (max-width: 1023px) {
 	transform: rotate(45deg);
 	}
-		
-
 }
 .drop-icon:after{
 	@media(min-width: 1024px) {
@@ -301,7 +299,7 @@ li.drop-menu_4:hover .submenu-5 {
 	transform: rotate(45deg);
 
 	@media(max-width:1023px) {
-		top: 10px;
+		top: 8px;
 		transform: rotate(0deg);
 		right: 0;
 		width:24px;
@@ -341,14 +339,9 @@ li.drop-menu_4:hover .submenu-5 {
 		animation-name: fadeIn;
 		-webkit-animation-duration: .8s;
 		animation-duration: .8s;
-
 	}
-
-
 }
 @media(max-width:1199px) {
-
-
 	.header-menu ul .submenu.submenu-3 {
 		width: 260px;
 	}
@@ -367,22 +360,20 @@ li.drop-menu_4:hover .submenu-5 {
 
 	.header-menu ul .submenu.submenu-3.active,.header-menu ul .submenu.submenu-4.active {
 		width: 98%;
-		padding-top: 15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 		.header-menu ul .submenu.submenu-4.active{width: 100%;}
    .header-menu ul .submenu.submenu-4.active li{padding-right: 0;}
 }
 
-// @media(max-width:767px) {
-// 	.header-menu ul .submenu.submenu-2 {
-// 		width: 240px;
-// 	}
-
-// 	.header-menu ul .submenu.submenu-3 {
-// 		width: 220px;
-// 	}
-
-// 	.header-menu ul .submenu.submenu-4 {
-// 		width: 210px;
-// 	}
-// }
+.toggle-menu{
+	width: 30px;
+	height: 30px;
+	display: none;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.59998 7.0001C2.59998 6.50304 3.00292 6.1001 3.49998 6.1001H24.5C24.997 6.1001 25.4 6.50304 25.4 7.0001C25.4 7.49715 24.997 7.9001 24.5 7.9001H3.49998C3.00292 7.9001 2.59998 7.49715 2.59998 7.0001ZM2.59998 14.0001C2.59998 13.503 3.00292 13.1001 3.49998 13.1001H24.5C24.997 13.1001 25.4 13.503 25.4 14.0001C25.4 14.4972 24.997 14.9001 24.5 14.9001H3.49998C3.00292 14.9001 2.59998 14.4972 2.59998 14.0001ZM2.59998 21.0001C2.59998 20.503 3.00292 20.1001 3.49998 20.1001H24.5C24.997 20.1001 25.4 20.503 25.4 21.0001C25.4 21.4972 24.997 21.9001 24.5 21.9001H3.49998C3.00292 21.9001 2.59998 21.4972 2.59998 21.0001Z' fill='%23ff6d00'/%3e%3c/svg%3e");
+	background-size: 28px;
+	@media (max-width: 1023px) {
+	 display: block;
+	}
+}

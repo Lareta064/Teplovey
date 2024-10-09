@@ -1,16 +1,33 @@
 .header{
 	background-image: url('../img/bg.webp');
 	background-size:cover;
-	
+	@media (max-width: 1023px) {
+		position: sticky;
+		top:0;
+		z-index: 2;
+	}
+	@media (max-width: 767px) {
+	background-color: #fff;
+	background-image: none;
+	}
 	&-top{
-		padding-block:40px;
+		padding-block:20px;
 		.flex-row{justify-content: space-between;}
 		.logo {
 			
 			display: flex;
 			justify-content: center;
+			@media (max-width: 1199px) {
+			width: 300px;
+			}
+			@media (max-width: 1023px) {
+			  width: 25%;
+			  min-width: 160px;
+			}
 		}
-		@media (max-width: 1199px) {padding-block: 20px;}
+		
+		@media (max-width: 1023px) {padding-block: 10px;}
+		
 		
 	}
 	&-top__title, &-top__contacts{
@@ -33,7 +50,9 @@
 			font-size: 16px;
 			}
 		}
-		
+		@media (max-width: 1023px) {
+		display: none;
+		}
 	}
 	&-contacts{
 		display: flex;
@@ -45,13 +64,14 @@
 		a{transition: .3s; }
 		a:hover{opacity: .6;}
 	}
-	&-top &-contacts{
+	&-top .header-contacts{
 		@media (max-width: 1023px) {
 			display: none;
 		}
 	}
 	&-bottom{
 		background-color: #7f7f7f;
+		.header-contacts{display: none;}
 		@media (max-width: 1023px) {
 			background-color: #fff;
 			position: fixed;
@@ -65,7 +85,7 @@
 			scrollbar-color: $accent, white;
 			transform: translateX(110%);
 			transition: .3s;
-			padding-top: 30px;
+			padding-top: 10px;
 			padding-bottom: 40px;
 			z-index: 5;
 			&.active{transform: translateX(0);}
@@ -77,8 +97,8 @@
 .header-bottom .mobile-menu-close{
 	display: none;
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 15px;
+	right: 12px;
 	z-index: 3;
 	width: 28px;
 	height: 28px;

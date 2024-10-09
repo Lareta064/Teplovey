@@ -8,18 +8,19 @@ header.header
 					h2.h2 Научно-Производственное Объединение
 				a(href="index.html").logo
 					img(src="./img/logo.webp", width="430" height="85" alt="logo")
-				.header-top__contacts.txt-center
+				.header-contacts.txt-center
 					a(href="+73512200530").special-link
 						span.txt-light +7 (351)
 						span.txt-bold 220-05-30
-					a.btn-cbpopup.roboto-accent(href="#!") Заказать звонок
+					a.btn-cbpopup.roboto-accent(href="/contacts/") Заказать звонок
 	// HEADER BOTTOM ROW
-	.header-bottom
+	.header-bottom.active
+		button.mobile-menu-close
 		.container
 			.header-menu.drop-menu
 				ul
-					li.menu-item.active
-						a(href="index.html").menu-link.menu-link--icon
+					li.menu-item.menu-item--icon.active
+						a(href="index.html").menu-link
 							svg.svg-home
 								use(href='./img/sprite.svg#svg-home')
 					li.menu-item.drop-menu.drop-menu_2
@@ -52,16 +53,16 @@ header.header
 						// submenu-2
 						.submenu.submenu-2
 							ul
-								li.drop-menu
+								li
 									a(href="#!") Решения
-								li.drop-menu
+								li
 									a(href="#!") Вентиляционное оборудование
 								li.drop-menu.drop-menu_3
 									a(href="#!") Воздухонагреватели (теплогенераторы)	
 									span.drop-icon
 									.submenu.submenu-3
 										ul
-											li.drop-menu.drop-menu_4
+											li
 												a(href="#!") Секция газового нагрева для вент. установки
 												
 											li
@@ -81,55 +82,79 @@ header.header
 												a(href="#!") Воздухонагреватели для высокотемпературных технологических процессов
 											li
 												a(href="#!") Воздухонагреватели мобильные
-								li.drop-menu
+								li
 									a(href="#!") Приточные установнки	
 					
 								li.drop-menu.drop-menu_3
 									a(href="#!") Приточно-вытяжные установки
 									span.drop-icon
-									
 									.submenu.submenu-3
 										ul
-											li.drop-menu.drop-menu_4
-												a(href="#!") submenu-3
-												span.drop-icon
-												.submenu.submenu-4
-													ul
-														li
-															a(href="#!") submenu-4	
+											li
+												a(href="#!") Приточно-вытяжные установки  с рекурперацией
+													
 								li.drop-menu.drop-menu_3
 									a(href="#!") Комплектующие для вентиляции
 									span.drop-icon
 									
 									.submenu.submenu-3
 										ul
-											li.drop-menu.drop-menu_4
-												a(href="#!") submenu-3
-												span.drop-icon
-												.submenu.submenu-4
-													ul
-														li
-															a(href="#!") submenu-4
-								li.drop-menu
+											li.drop-menu
+												a(href="#!") Воздуховоды
+											li.drop-menu
+												a(href="#!") Воздухораспределители
+											li.drop-menu
+												a(href="#!") Тепловые завесы
+											li.drop-menu
+												a(href="#!") Блоки фильтров
+											li.drop-menu
+												a(href="#!") Клапана
+											li.drop-menu
+												a(href="#!") Шумоглушители
+											li.drop-menu
+												a(href="#!") Канальные рекуператоры
+								li
 									a(href="#!") Рекуператоры полимерные
-								li.drop-menu
+								li
 									a(href="#!") Инфракрасная сушилка с рекуператором
-								li.drop-menu
+								li
 									a(href="#!") Системы автоматизации и управления
-								li.drop-menu
+								li
 									a(href="#!") Каталог продукции
-								li.drop-menu
+								li
 									a(href="#!") Вся продукция
 					
-					li.menu-item
+					li.menu-item.drop-menu.drop-menu_2
 						a(href="#!").menu-link Наши услуги
-					
+						span.drop-icon
+						.submenu.submenu-2
+							ul
+								li
+									a(href="#!") Проектирование
+								li
+									a(href="#!") Обслуживание
+								li
+									a(href="#!") Автоматизация
+								li
+									a(href="#!") Диагностика воздухонагревателей
+								li
+									a(href="#!") Диагностика систем вентиляции
+								li
+									a(href="#!") Тепловизионное обследование
+								li
+									a(href="#!") Монтаж и наладка
+								li
+									a(href="#!") Модернизация
 					li.menu-item
 						a(href="#!").menu-link Выполненные проекты
-						
-												
 					li.menu-item
 						a(href="#!").menu-link
 							svg.svg-phone
 								use(href='./img/sprite.svg#svg-phone')
 							| Kонтакты
+
+			.header-contacts.txt-center
+				a(href="+73512200530").special-link
+					span.txt-light +7 (351)
+					span.txt-bold 220-05-30
+				a.btn-cbpopup.roboto-accent(href="/contacts/") Заказать звонок

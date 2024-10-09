@@ -81,12 +81,12 @@
 				}
 			}
 		}
-
+		
 		li:hover {
 			&:after {
 				width: 100%;
 			}
-			.menu-link{color:$accent2;}
+			.menu-link, .menu-link svg{color:$accent2;}
 			@media(max-width:1023px) {
 				&:after {
 					display: none;
@@ -94,6 +94,7 @@
 			}
 		}
 		.menu-link{
+			white-space: nowrap;
 			font-size: 20px;
 			font-weight: 700;
 			color: white;

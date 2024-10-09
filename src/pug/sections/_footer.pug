@@ -22,5 +22,40 @@ footer.footer
 							span Все контакты
 
 
-
+	// FOOTER BOTTOM
 	.footer-bottom
+		.container
+			.flex-row
+				.footer-search
+					form.searchform(role='search' method='get' action='/search/' accept-charset='utf-8')
+						input(type='hidden' name='searchid' value='4227292')
+						input(type='hidden' name='l10n' value='ru')
+						input(type='hidden' name='reqenc')
+						.form-group
+							label.form-item-label(for='search') Поиск:
+							input.field.searchform-s(type='text' name='text' placeholder='Для поиска нажмите Enter …')
+				// select-city
+				.select-city
+					span Город:
+					a(href="#!").btn-citypopup Челябинск
+				// apptt-logo
+				.apptt-logo
+					span Продвижение
+					.apptt-logo__img
+						img(src="./img/appetty.png", width="110" height="35" alt="appetty-logo")
+				
+				//FOOTER MENU
+				.footer-menu
+					ul
+						li
+							a(href="#!") О компании
+						li
+							a(href="#!") Продукция
+						li
+							a(href="#!") Услуги
+						li
+							a(href="#!") Статьи
+						li
+							a(href="#!") Контакты
+						li
+							a(href="#!") Политика конфеденциальности

@@ -139,6 +139,8 @@
 
 		}
 	}
+	.header-menu-list, .menu-item{padding-right: 0;}
+	
 }
 
 // СТИЛИ ДЛЯ ПОДМЕНЮ
@@ -322,7 +324,7 @@ li.drop-menu_4:hover .submenu-5 {
 		padding: 0;
 		
 	}
-
+   .header-menu .header-menu-list{padding-right: 16px;}
 	.header-menu ul li.drop-menu_2,
 	.header-menu ul li.drop-menu_3,
 	.header-menu ul li.drop-menu_4 {

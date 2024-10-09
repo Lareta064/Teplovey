@@ -1,9 +1,31 @@
+.h1{
+	font-size: 50px;
+	line-height: 1.7;
+	font-family: $fs;
+	font-weight: 700;
+	@media (max-width: 1199px) {
+	 font-size: 42px;
+	}
+	@media (max-width: 1023px) {
+		font-size: 36px;
+	}
+	@media (max-width: 767px) {
+		font-size: 30px;
+		line-height: 1.5;
+	}
+}
 .h2{
 	font-size: 18px;
 	line-height: 1.05;
 	text-transform: uppercase;
 	font-family: $fs;
 	font-weight: 700;
+}
+.txt-25{
+	font-size: 25px;
+	@media (max-width: 767px) {
+		font-size: 19px
+	}
 }
 .roboto-accent{
 	font-family: $ft;

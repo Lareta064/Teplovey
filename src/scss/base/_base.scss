@@ -116,6 +116,30 @@ select:-webkit-autofill:focus {
   grid-template-columns: repeat(12, 1fr);
   column-gap: 30px;
 }
+.grid-col-1 {grid-column: span 1;}
+.grid-col-2 {grid-column: span 2;}
+.grid-col-3 {grid-column: span 3;}
+.grid-col-4{grid-column: span 4;}
+.grid-col-5 { grid-column: span 5;}
+.grid-col-6 {grid-column: span 6;}
+.grid-col-7 { grid-column: span 7;}
+.grid-col-8{grid-column: span 8;}
+.grid-col-9 {grid-column: span 9;}
+  
+.img-over{
+  position: relative;
+  overflow: hidden;
+  &:after{
+    content:'';
+    position: absolute;
+    inset:0;
+    background-color: rgba(255,255,255, .26);
+    z-index: 2;
+    transition: .3s;
+    transform: translateY(110%);
+  }
+  &:hover:after{transform: translateY(0);}
+}
 .form-group{
   input, textarea{
     display: block;

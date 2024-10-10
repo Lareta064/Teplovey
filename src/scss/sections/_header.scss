@@ -1,6 +1,7 @@
 .header{
 	background-image: url('../img/bg.webp');
 	background-size:cover;
+	
 	@media (max-width: 1023px) {
 		position: sticky;
 		top:0;
@@ -62,7 +63,11 @@
 	}
 	&-bottom{
 		background-color: #7f7f7f;
-		.contacts-group{display: none;}
+		padding-top: 10px;
+		padding-bottom: 10px;
+		.container{display: flex;align-items: center;column-gap:60px;}
+		.sticky-header-logo, .contacts-group{display: none;}
+		
 		@media (max-width: 1023px) {
 			background-color: #fff;
 			position: fixed;
@@ -96,9 +101,41 @@
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M14 2.5C14.5523 2.5 15 2.94772 15 3.5V13H24.5C25.0523 13 25.5 13.4477 25.5 14C25.5 14.5523 25.0523 15 24.5 15H15V24.5C15 25.0523 14.5523 25.5 14 25.5C13.4477 25.5 13 25.0523 13 24.5V15H3.5C2.94772 15 2.5 14.5523 2.5 14C2.5 13.4477 2.94772 13 3.5 13H13V3.5C13 2.94772 13.4477 2.5 14 2.5Z' fill='%23f56700' opacity='0.6'/%3e%3c/svg%3e");
 	transform: rotate(45deg);
 }
+.header.sticky-header{
+	
+	@media(min-width:1024px){
+		position: sticky;
+		// top: -125px;
+		z-index: 5;
+		.header-bottom{
+			padding-top: 15px;
+			padding-bottom: 15px;
+			display: flex;
+			align-items: center;
+			background-color: $accent;
+			.sticky-header-logo{display: block;}
+		}
+		
+		animation-name: slowSticky;
+		animation-duration: .5s;
+		animation-fill-mode: forwards;
+		
+	}
+}
+@keyframes slowSticky{
+	from{top: -200px;}
+	to{top: -105px;}
+	
+}
+@media (min-width: 1200px) {
+	@keyframes slowSticky {
+		from {top: -200px;}
+		to{top: -125px;}
+	}
+}
 @media (max-width: 1023px) {
 .header-bottom{
-	
+	.sticky-header-logo{display: none!important;}
 	.mobile-menu-close {
 			display: block;
 		}

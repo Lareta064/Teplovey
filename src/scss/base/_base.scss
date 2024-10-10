@@ -32,6 +32,7 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    
     .header, .footer, main{width: 100%;flex-shrink:0}
     main{
       flex-grow:1;
@@ -127,18 +128,18 @@ select:-webkit-autofill:focus {
 }
 .grid-four{
    @media (max-width: 1023px) {
-      .grid-col-3{grid-column: span 4;}
+    .grid-col-3{grid-column: span 4;}
+  }
+  @media (max-width: 767px) {
+    .grid-col-3 {
+      grid-column: span 6;
     }
-    @media (max-width: 767px) {
-      .grid-col-3 {
-        grid-column: span 6;
-      }
+  }
+  @media (max-width: 574px) {
+    .grid-col-3 {
+      grid-column: span 12;
     }
-    @media (max-width: 574px) {
-      .grid-col-3 {
-        grid-column: span 12;
-      }
-    }
+  }
 }
 .grid-col-1 {grid-column: span 1;}
 .grid-col-2 {grid-column: span 2;}

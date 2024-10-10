@@ -1,10 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
     // моб меню - показать по клику га бургер-иконку
 	const bodyEl = document.body;
+	
 	const mobMenu = document.querySelector('#mob-menu');
+	const pageHeader = document.querySelector('#header');
+
 	const mobMenuOpen = document.querySelector('#toggle-menu');
 	const mobMenuClose = document.querySelector('#close-menu');
-	
+	/* зафикировать меню в шапке при скролле */
+	window.addEventListener('scroll', ()=>{
+		if(window.scrollY > 100){
+			pageHeader.classList.add('sticky-header');
+		}else{
+			pageHeader.classList.remove('sticky-header');
+		}
+	});
 	if(mobMenu){
 		mobMenuOpen.addEventListener('click',()=>{
 			mobMenu.classList.add('active');

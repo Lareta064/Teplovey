@@ -1,0 +1,24 @@
+.our-clients-swiper{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #fff;
+	.swiper-slide{
+		width: fit-content!important;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-inline: 25px;
+		img{
+			height: 60px;
+			width: auto;
+		}
+	}
+	@media (max-width: 767px) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		.swiper-slide{
+			padding-inline: 16px;
+			img {height: 45px}
+		}
+	}
+}

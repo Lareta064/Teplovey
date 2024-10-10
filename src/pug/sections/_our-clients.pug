@@ -1,0 +1,14 @@
+mixin client-slider(count)
+	- var n = 1
+	while n < count
+		.swiper-slide
+			.clients-item
+				img(src="./img/slide"+ n++ +".webp", height="60" alt="logo")
+	
+//CLIENTS
+section.our-clients
+	.section-title
+		h2.title Наши клиенты
+	.our-clients-swiper.swiper
+		.swiper-wrapper
+			+client-slider(13)

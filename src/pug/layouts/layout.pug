@@ -10,6 +10,8 @@ html(lang="ru")
 		
 		//====убрать синий цвет у ссылок в сафари ========
 		meta(name="format-detection" content="telephone=no")
+		//======= swiper =============
+		link(rel="stylesheet" href="libs/swiper/swiper.min.css" )
 		link(rel="stylesheet", href="css/main.css")
 		style.
 
@@ -74,7 +76,11 @@ html(lang="ru")
 	body
 		
 		block content
-		
-		
-		//=============== мои скрипты ===================	
-		script(src="js/main.js")
+		//===jQuery===
+		script(src="./libs/jquery/jquery-3.0.0.min.js")
+		//===jQuery lazy===
+		script(src="./libs/jquery.lazy.min.js")
+		//===swiper===
+		script(src="./libs/swiper/swiper.js")
+		//=== custom scripts ===
+		script(src="./js/main.js")

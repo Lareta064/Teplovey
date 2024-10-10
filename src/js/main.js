@@ -102,5 +102,17 @@ document.addEventListener("DOMContentLoaded", function () {
 		showSubmenu(item, '.submenu-4');
 	}
 	
-	
+	/* CLIENTS SLIDER */
+	var clientSlider = new Swiper('.our-clients-swiper',{
+		slidesPerView: 'auto',
+		speed: 3500,
+		loop: true,
+		autoplay:{
+			delay: 0,
+			disableOnInteraction: false,
+		},
+		freeMode: true,
+		freeModeMomentum: false,
+
+	});
 });

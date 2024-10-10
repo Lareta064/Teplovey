@@ -6,6 +6,7 @@
 	padding-block: 50px;
 	@media (max-width: 767px) {
 	  padding-block: 25px;
+	  background: $accent url(../img/bg2-mobile.webp);
 	}
 	.h1{
 		span{

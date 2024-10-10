@@ -32,7 +32,7 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    
+
     .header, .footer, main{width: 100%;flex-shrink:0}
     main{
       flex-grow:1;
@@ -44,6 +44,13 @@
     background-position: center;
     background-repeat: repeat;
     background-repeat: cover;
+  }
+  section {
+    padding-block: 40px;
+    
+    @media (max-width: 767px) {
+      padding-block: 30px;
+    }
   }
   a{color: inherit; display: inline-block;}
   a,
@@ -121,9 +128,9 @@ select:-webkit-autofill:focus {
 .grid-row, .grid-four{
   display: grid; 
   grid-template-columns: repeat(12, 1fr);
-  gap: 30px;
+  gap: 24px;
   @media (max-width: 1199px) {
-      gap: 16px;
+      gap: 24px 16px;
   }
 }
 .grid-four{
@@ -150,7 +157,17 @@ select:-webkit-autofill:focus {
 .grid-col-7 { grid-column: span 7;}
 .grid-col-8{grid-column: span 8;}
 .grid-col-9 {grid-column: span 9;}
- .p-block-40{padding-block:40px;}
+ 
+.p-block-40{
+  padding-block:40px;
+  @media (max-width: 1023px) {  
+    padding-block: 24px;
+  }
+}
+.mt-48 {
+  margin-top: 48px;
+  @media (max-width: 1023px) { margin-top: 32px; }
+}
 .img-over{
   position: relative;
   overflow: hidden;

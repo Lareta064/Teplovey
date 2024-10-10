@@ -1,5 +1,7 @@
 .accent-btn{
    display: inline-flex;
+   justify-content: center;
+   align-items: center;
    cursor:pointer;
    column-gap:10px;
     color: #fff;
@@ -12,11 +14,19 @@
 	transition: .3s;
 	text-decoration: none;
 	svg{color: white;}
+	@media (max-width: 767px) {
+		min-width: 200px;
+	}
 	&:hover{
 		color: #f7f7f7;
 		border-color: #e08700;
 		background-color: #e08700;
 		
 		text-decoration: none;
+	}
+}
+.accent-btn.w-100 {
+	@media (max-width: 767px) {
+	  width: 100%;
 	}
 }

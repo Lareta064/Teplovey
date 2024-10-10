@@ -28,6 +28,9 @@
 }
 .title{
 	font-size: 32px;
+	@media (max-width: 767px) {
+	  font-size: 26px;
+	}
 }
 .section-title{
 	padding-inline:20px;
@@ -42,6 +45,10 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	@media (max-width: 767px) {
+	   min-height: 60px;
+	  background-image: url('../img/bg-title-mobile.webp');
+	}
 }
 .single-part{
 	.h3{
@@ -60,6 +67,9 @@
 			background-color: $accent;
 		}
 	}
+	
+}
+.single-part.single-part--hover{
 	&:hover .h3:after{width: 100%;}
 }
 .txt-25{

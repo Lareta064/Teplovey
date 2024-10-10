@@ -172,11 +172,11 @@ select:-webkit-autofill:focus {
 .grid-col-9 {grid-column: span 9;}
  
 .p-block-40{
-  padding-block:40px;
+  padding-block:40px 60px;
  
 }
-.mt-48 {
-  margin-top: 48px;
+.mt-40 {
+  margin-top: 40px;
   @media (max-width: 1023px) { margin-top: 32px; }
 }
 .img-over{

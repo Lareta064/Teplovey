@@ -88,6 +88,7 @@
 	}
 	
 }
+.single-part +.single-part{margin-top: 40px;}
 .single-part.single-part--hover{
 	&:hover .h3:after{width: 100%;}
 }

@@ -4,9 +4,10 @@
 	background-size: cover;
 	background-position: center;
 	padding-block: 50px;
+	.container{background: transparent;}
 	@media (max-width: 767px) {
 	  padding-block: 25px;
-	  background: $accent url(../img/bg2-mobile.webp);
+	  background: $accent url(../img/bg2-mob.webp);
 	}
 	.h1{
 		span{

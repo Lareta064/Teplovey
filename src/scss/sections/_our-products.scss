@@ -1,5 +1,5 @@
 .our-products{
-	
+	padding-top: 40px;
 }
 .prod-link{
 	width: 100%;
@@ -15,7 +15,8 @@
 		}
 	}
 	&__body{
-		padding: 10px 6px;	
+		padding: 10px 6px;
+		&>*+*{margin-top: 10px;}
 	}
 }
 .img-round .img-wrap{

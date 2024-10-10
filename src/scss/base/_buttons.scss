@@ -13,9 +13,11 @@
 	background-repeat: repeat-x;
 	transition: .3s;
 	text-decoration: none;
+	min-width: 170px;
 	svg{color: white;}
 	@media (max-width: 767px) {
 		min-width: 200px;
+		max-width: 360px;
 	}
 	&:hover{
 		color: #f7f7f7;

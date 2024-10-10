@@ -46,11 +46,8 @@
     background-repeat: cover;
   }
   section {
-    padding-block: 40px;
+    .container{background-color: #fff;}
     
-    @media (max-width: 767px) {
-      padding-block: 30px;
-    }
   }
   a{color: inherit; display: inline-block;}
   a,

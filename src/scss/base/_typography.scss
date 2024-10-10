@@ -47,7 +47,7 @@
 	background-size: cover;
 	@media (max-width: 767px) {
 	   min-height: 60px;
-	  background-image: url('../img/bg-title-mobile.webp');
+	  background-image: url('../img/bg-title-mob.webp');
 	}
 }
 .single-part{
@@ -87,7 +87,15 @@
 	width: fit-content;
 	text-decoration: underline;
 	text-decoration-skip: none;
-	
+	&:hover{text-decoration:none;}
+}
+.arrow-link{
+	display: inline-flex;
+	column-gap:6px;
+	svg{transition: 0.3s;}
+	&:hover{
+		svg{color: $accent;}
+	}
 }
 .txt-accent, .roboto-accent, .accent-link{color: $accent;}
 .txt-light{font-weight: 100;}

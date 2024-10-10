@@ -3,6 +3,7 @@
 	  box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     
   }
   
@@ -111,18 +112,18 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #01203c inset;
   transition: background-color 5000s ease-in-out 0s;
 }
-.container{
+.container, .container-narrow{
   width: min(1270px, 100%);
   padding-inline: 20px;
   margin: 0 auto;
-  
 }
+.container-narrow{width: min(1150px, 100%);}
 .flex-row{
   display: flex;
   align-items: center;
   column-gap: 20px;
 }
-.grid-row, .grid-four{
+.grid-row, .grid-four-columns, .grid-five-columns{
   display: grid; 
   grid-template-columns: repeat(12, 1fr);
   gap: 24px;
@@ -130,7 +131,7 @@ select:-webkit-autofill:focus {
       gap: 24px 16px;
   }
 }
-.grid-four{
+.grid-four-columns{
    @media (max-width: 1023px) {
     .grid-col-3{grid-column: span 4;}
   }
@@ -144,6 +145,20 @@ select:-webkit-autofill:focus {
       grid-column: span 12;
     }
   }
+}
+.grid-five-columns{
+  grid-template-columns: repeat(10, 1fr);
+  @media (max-width: 767px) {
+      .grid-col-2 {
+        grid-column: span 5;
+      }
+    }
+  
+    @media (max-width: 574px) {
+      .grid-col-2 {
+        grid-column: span 10;
+      }
+    }
 }
 .grid-col-1 {grid-column: span 1;}
 .grid-col-2 {grid-column: span 2;}

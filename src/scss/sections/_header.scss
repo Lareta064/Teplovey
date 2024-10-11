@@ -65,7 +65,7 @@
 		background-color: #7f7f7f;
 		padding-top: 10px;
 		padding-bottom: 10px;
-		.container{display: flex;align-items: center;column-gap:60px;}
+		
 		.sticky-header-logo, .contacts-group{display: none;}
 		
 		@media (max-width: 1023px) {
@@ -114,6 +114,11 @@
 			align-items: center;
 			background-color: $accent;
 			.sticky-header-logo{display: block;}
+			.container {
+				display: flex;
+				align-items: center;
+				column-gap: 60px;
+			}
 		}
 		
 		animation-name: slowSticky;

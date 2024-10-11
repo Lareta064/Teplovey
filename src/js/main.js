@@ -25,6 +25,20 @@ document.addEventListener("DOMContentLoaded", function () {
 			bodyEl.classList.remove('lock');
 		});
 	}
+
+	let lastWindowWidth = window.innerWidth;
+	window.addEventListener('resize', function () {
+		let currentWindowWidth = window.innerWidth;
+
+		// Проверяем, что ширина экрана изменилась и она больше 1023 пикселей
+		if (currentWindowWidth !== lastWindowWidth && currentWindowWidth > 1023) {
+			mobMenu.classList.remove('active');
+			bodyEl.classList.remove('lock');
+		}
+
+		// Обновляем значение предыдущей ширины
+		lastWindowWidth = currentWindowWidth;
+	});
 	// моб меню - показать выпадающие меню
 	const openMenuLevel2 = document.querySelectorAll('.drop-menu_2');
 	const openMenuLevel3 = document.querySelectorAll('.drop-menu_3');

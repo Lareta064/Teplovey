@@ -44,13 +44,12 @@
     background: $lightGrey url(../img/snd-bg.webp);
     background-position: center;
     background-repeat: repeat;
-    background-repeat: cover;
+    background-size: 100% ;
+    background-position: center;
   }
-  section {
-    .container{background-color: #fff;}
-    .container.bg-transpr{background-color: transparent;}
-    
-  }
+  
+  .bg-transpr{background-color: transparent;}
+  
   a{color: inherit; display: inline-block;}
   a,
   a:hover {

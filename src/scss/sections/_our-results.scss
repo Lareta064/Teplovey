@@ -16,8 +16,8 @@
 		object-fit: contain;
 	}
 	line-height: 1.3;
-	.txt-dark, .txt-accent{width: 100%; line-height: 1.1;}
-	.txt-dark{font-size: 2.15em; min-height: 1.6em; span{font-size: .5em; display: block;}}
+	.txt-black, .txt-accent{width: 100%; line-height: 1.1;}
+	.txt-black{font-size: 2.15em; min-height: 1.6em; span{font-size: .5em; display: block;}}
 	@media (max-width: 1199px) {
 		font-size: 16px;
 	}
@@ -25,6 +25,6 @@
 		font-size: 20px;
 	}
 	@media (max-width: 574px) {
-		.txt-dark{min-height: unset;}
+		.txt-black{min-height: unset;}
 	}
 	}

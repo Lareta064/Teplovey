@@ -2,11 +2,13 @@ section.our-products
 	.section-title
 		h2.title Наша продукция
 	.container
+		
 		// класс p-block-40 дает вертикальные отступы по 40 пикс, bg-white - дает белый фоновый цвет, .grid-four-columns - 4 колонки, .single-part--hover - подчеркивание заголовка по ховеру над секцией
 		.products-content.p-block-40
 			//===SINGLE CATEGORY ===
-			.single-part.single-part--hover
-				h3.h3 Системы вентиляции
+			.single-part
+				h2.h3 
+					a(href="#!").link-title Системы вентиляции
 				
 				.grid-four-columns
 					.grid-col-3
@@ -42,7 +44,8 @@ section.our-products
 								.accent-link ПВУ с рекуперацией
 			//===SINGLE CATEGORY ===
 			.single-part.single-part--hover
-				h3.h3 Воздухонагреватели
+				h3.h3
+					a(href="#!").link-title Воздухонагреватели
 				.grid-four-columns
 					.grid-col-3
 						a(href="#!").prod-link.img-round
@@ -118,7 +121,8 @@ section.our-products
 
 			//===SINGLE CATEGORY ===
 			.single-part
-				h3.h3 Решения
+				h3.h3 
+					a(href="#!").link-title Решения
 				.grid-four-columns
 					.grid-col-3
 						a(href="#!").prod-link

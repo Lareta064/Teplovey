@@ -1,0 +1,18 @@
+extends ../layouts/layout.pug
+
+block content
+	.page-wrapper
+		//HEADER
+		include ../sections/_header.pug
+		//MAIN
+		main.main
+			include ../sections/_quality.pug
+			
+
+
+		//FOOTER
+		include ../sections/_footer.pug
+	
+	
+block variables
+	-var title = "Качество";

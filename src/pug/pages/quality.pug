@@ -5,7 +5,18 @@ block content
 		//HEADER
 		include ../sections/_header.pug
 		//MAIN
-		main.main
+		main.inner-main
+			.inner-hero
+				.container
+					h1 Служба качества
+					ul.breadcrumbs
+						li
+							a(href="index.html") Главная
+						li
+							a(href="#!") Услуги
+						li
+							a(href="#!") Служба качества
+						
 			include ../sections/_quality.pug
 			
 

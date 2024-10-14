@@ -162,3 +162,69 @@
 	}
 	.accent-btn {margin-top: 16px;}
 }
+.inner-hero{
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	background: #e86b06 url('../img/bg2.webp');
+	.container{
+		display: flex;
+	   align-items: center;
+	   justify-content: space-between;
+	   .breadcrumbs{
+		flex-shrink: 0;
+	   }
+	}
+	
+	h1, .h1{
+		font-size: 33px;
+		line-height: 36px;
+		font-weight: 800;
+		color: black;
+	}
+}
+
+.breadcrumbs.bg-dark,
+.breadcrumbs.bg-light {
+	padding: 4px 10px;
+}
+
+.breadcrumbs.bg-dark {
+	background-color: rgba(15, 18, 19, 0.1);
+}
+
+.breadcrumbs.bg-light {
+	background-color: rgba(255, 255, 255, 0.12);
+}
+
+.breadcrumbs li {
+	position: relative;
+	background: none;
+	display: inline-block;
+	padding-left: 12px;
+   margin-left: 8px;
+}
+
+.breadcrumbs li:first-child:before{
+	content: "";
+}
+
+ .breadcrumbs li:before{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 15px;
+	height: 13px;
+	content: "/";
+	opacity: 0.5;
+	text-align: left;
+	z-index: 3;
+}
+
+.breadcrumbs li:before {
+	opacity: 1;
+}
+.custom-text{
+	p{margin-bottom: 10px;}
+
+}

@@ -79,7 +79,7 @@
 	font-size: 29px;
 	font-weight: 300;
 	line-height: 30px;
-	margin-bottom: 15px;
+	margin-bottom: 15px!important;
 }
 .txt-30{
 	font-size: 30px;
@@ -270,10 +270,10 @@
 		margin-top: 40px;
 		margin-bottom: 40px;
 	}
-	h2{font-size: 26px; line-height: 1.1;}
+	h2{font-size: 26px; line-height: 1.1; color: $accent;}
 	h4{
 		margin-top: 25px;
-		color:$gray ;
+		color:$gray;
 	}
 	h5, p{margin:0;margin-bottom: 10px; text-transform: none;}
 	p{line-height: 24px; color: #4f4f4f;}
@@ -302,5 +302,12 @@
 	background-position: center;
 	background-size:8px;
 	background-repeat: no-repeat;
-	
+}
+.custom-text ul li{
+	color: $gray;
+	p{margin-bottom: 0;}
+	&+ li{margin-top: 5px;}
+	transition: .3s;
+	* {line-height: 1.2; color: inherit;}
+	a:hover{color: $accent;}
 }

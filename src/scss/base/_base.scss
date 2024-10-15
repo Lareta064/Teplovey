@@ -16,7 +16,7 @@
 	margin: 0;
 	padding: 0;
 	width: 100%;
-  color: black;
+  color: #4f4f4f;;
   font-family: $ff, sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -199,16 +199,19 @@ select:-webkit-autofill:focus {
 .d-grid-4>* {
   grid-column: span 3;
 
-  @media (max-width: 1023px) {
-    grid-column: span 4;
-  }
-
-  @media (max-width: 767px) {
-    grid-column: span 6;
-  }
-    @media (max-width: 574px){grid-column: span 12;}
+  @media (max-width: 1023px) {grid-column: span 4;}
+  @media (max-width: 767px) {grid-column: span 6;}
+  @media (max-width: 574px){grid-column: span 12;}
 }
-
+.d-grid-4 > .grid-column{
+  @media (max-width: 1023px) {
+      grid-column: span 6;
+    }
+    
+    @media (max-width: 574px) {
+      grid-column: span 12;
+    }
+}
 /*пять колонок*/
 .d-grid-5>* {
   grid-column: span 2;

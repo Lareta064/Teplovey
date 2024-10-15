@@ -284,6 +284,7 @@
 	li{
 		position: relative;
 		padding-left: 24px;
+		line-height: 26px;
 		.title-18{margin-bottom: 0;}
 	}
 	li +li{margin-top: 25px;}
@@ -306,8 +307,7 @@
 .custom-text ul li{
 	color: $gray;
 	p{margin-bottom: 0;}
-	&+ li{margin-top: 5px;}
+	
 	transition: .3s;
-	* {line-height: 1.2; color: inherit;}
 	a:hover{color: $accent;}
 }

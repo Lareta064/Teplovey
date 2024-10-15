@@ -10,7 +10,6 @@
   html {
 	 scroll-behavior: smooth;
   }
-
   html,
   body {
 	margin: 0;
@@ -38,6 +37,20 @@
     main{
       flex-grow:1;
       flex-shrink: 1;
+    }
+  }
+  .scroll-horizontal{
+    width: 100%;
+   
+    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width:none;
+    @media (max-width: 1039px) {
+     width: calc(50vw + 50%); 
+     
+    }
+    &::-webkit-scrollbar{
+      display: none;
     }
   }
   .main, .inner-main{

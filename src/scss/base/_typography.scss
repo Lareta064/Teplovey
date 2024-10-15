@@ -167,6 +167,7 @@
 	display: flex;
 	align-items: center;
 	background: #e86b06 url('../img/bg2.webp');
+	padding-block:15px;
 	.container{
 		display: flex;
 	   align-items: center;
@@ -174,13 +175,23 @@
 	   .breadcrumbs{
 		flex-shrink: 0;
 	   }
+	   @media (max-width: 767px) {
+	      flex-direction: column;
+		  row-gap:20px;
+		  text-align: center;
+		  justify-content: center;
+
+	   }
 	}
 	
 	h1, .h1{
 		font-size: 33px;
-		line-height: 36px;
+		line-height: 1.1;
 		font-weight: 800;
 		color: black;
+		@media (max-width: 359px) {
+			font-size: 28px;
+		}
 	}
 }
 
@@ -203,6 +214,7 @@
 	display: inline-block;
 	padding-left: 12px;
    margin-left: 8px;
+   a:hover{text-decoration: underline; text-decoration-skip-ink: none;}
 }
 
 .breadcrumbs li:first-child:before{
@@ -225,6 +237,24 @@
 	opacity: 1;
 }
 .custom-text{
-	p{margin-bottom: 10px;}
+	color: black;
+	h2,h3, h4, h5{
+		font-family: $fs;margin-bottom: 15px;
+		font-size:20px;
+		line-height: 1.1;
+		text-transform: uppercase;
+	}
+	h2, h3{
+		font-size: 22px;
+		line-height: 26px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	h4{
+		margin-top: 25px;
+		color:$gray ;
+	}
+	h5, p{margin:0;margin-bottom: 10px; text-transform: none;}
+	p{line-height: 24px; color: #4f4f4f;}
 
 }

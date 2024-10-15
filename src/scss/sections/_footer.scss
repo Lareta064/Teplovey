@@ -1,5 +1,7 @@
 .footer{
 	background-image: url('../img/bg2.webp');
+	background-size: cover;
+	background-position: center;
 	.footer-logo{
 		width: 400px;
 		height: 80px;
@@ -25,7 +27,7 @@
 	&-top{
 		padding-block: 50px;
 		@media (max-width: 767px) {
-			padding-block: 3px;
+			padding-block: 30px;
 		}
 	}
 	&-bottom{
@@ -36,7 +38,7 @@
 			column-gap:44px;
 			@media (max-width: 1279px) {
 			 flex-wrap:wrap;
-			 row-gap:30px;
+			//  row-gap:30px;
 			 .footer-menu{width: 100%;}
 			}
 			@media (max-width: 767px) {

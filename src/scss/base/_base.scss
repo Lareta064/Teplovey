@@ -173,8 +173,6 @@ select:-webkit-autofill:focus {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
-   @media(max-width:1199px){gap: 30px;}
-   @media(max-width:767px) {gap: 15px; }
  }
   
 .d-grid-5{
@@ -293,6 +291,7 @@ select:-webkit-autofill:focus {
 .inner-hero{
   background-size: cover;
   background-position: center;
+  margin-bottom: 20px;
     @media (max-width: 1919px) {
       background-size: contain;
       background-repeat:repeat;

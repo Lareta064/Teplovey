@@ -1,3 +1,12 @@
 .float-right-img{
-	img{float:right; margin-left: 15px;}
+	img{float:right; margin-left: 15px; width: 40%; max-width: 415px;}
+	@media (max-width: 767px) {
+	  img{
+		float: unset;
+		display: block;
+		margin-inline: auto;
+		width: 100%;
+		margin-bottom: 20px;
+	  }
+	}
 }

@@ -1,5 +1,8 @@
 .float-right-img{
-	img{float:right; margin-left: 15px; width: 40%; max-width: 415px;}
+	img{float:right; margin-left: 15px;}
+	@media (max-width: 1199px) {
+	img {width: 30%;}
+	}
 	@media (max-width: 767px) {
 	  img{
 		float: unset;
@@ -8,6 +11,12 @@
 		width: 100%;
 		margin-bottom: 20px;
 	  }
+	}
+}
+.product-variants{
+	img{margin: 0;}
+	p{
+		margin-block: 10px 30px;
 	}
 }
 .filter-container .noUi-pips.noUi-pips-horizontal .noUi-value:last-child{

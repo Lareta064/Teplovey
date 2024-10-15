@@ -270,11 +270,12 @@
 		margin-top: 40px;
 		margin-bottom: 40px;
 	}
-	h2{font-size: 26px; line-height: 1.1; color: $accent;}
+	h2{font-size: 26px; margin-bottom: 15px;line-height: 1.1; color: $accent;}
 	h4{
 		margin-top: 25px;
 		color:$gray;
 	}
+	h3, h5{color: black;}
 	h5, p{margin:0;margin-bottom: 10px; text-transform: none;}
 	p{line-height: 24px; color: #4f4f4f;}
 

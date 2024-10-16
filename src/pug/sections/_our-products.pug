@@ -11,107 +11,33 @@ section.our-products
 					a(href="#!").link-title Системы вентиляции
 				
 				.d-grid-4
-					a(href="product-page.html").prod-link.img-round
-						.img-wrap
-							img(src="./img/prod1.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Приточные установки
-				
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/prod2.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Приточно-вытяжные установки
-				
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/prod3.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Комплектующие к системам вентиляции
-				
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/prod4.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Рекуператоры
+					+product-card('prod1', 'Приточные установки')(class="img-round")
+					+product-card('prod2', 'Приточно-вытяжные установки')(class="img-round")
+					+product-card('prod3', 'Комплектующие к системам вентиляции')(class="img-round")
+					+product-card('prod4', 'Рекуператоры')(class="img-round")
+					+product-card('prod5', 'ПВУ с рекуперацией')(class="img-round")
 
-				
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/prod5.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link ПВУ с рекуперацией
 			//===SINGLE CATEGORY ===
-			.single-part.single-part--hover
+			.single-part
 				h3.h3
 					a(href="#!").link-title Воздухонагреватели
 				.d-grid-4
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/vn1.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Секция газового нагрева
-				
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/vn2.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Воздухонагреватель смесительный высокотемпературный
-				
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/vn3.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Воздухонагреватели рекуперативные
-				
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/vn4.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Воздухонагреватели для высокотемпературных тех. процессов
-
-				
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/vn5.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Мобильные воздухонагреватели
-				
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/vn6.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Высокотемпературные рекуперативные воздухонагреватели
-				
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/vn7.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Смесительные воздухонагреватели
-
-				
-					a(href="#!").prod-link.img-round
-						.img-wrap
-							img(src="./img/vn8.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Воздухонагреватели рекуперативные револьверные
+					+product-card('vn1', 'Секция газового нагрева')(class="img-round")
+					+product-card('vn2', 'Воздухонагреватель смесительный высокотемпературный')(class="img-round")
+					+product-card('vn3', 'Воздухонагреватели рекуперативные')(class="img-round")
+					+product-card('vn4', 'Воздухонагреватели для высокотемпературных тех. процессов')(class="img-round")
+					+product-card('vn5', 'Мобильные воздухонагреватели')(class="img-round")
+					+product-card('vn6', 'Высокотемпературные рекуперативные воздухонагреватели')(class="img-round")
+					+product-card('vn7', 'Смесительные воздухонагреватели')(class="img-round")
+					+product-card('vn8', 'Воздухонагреватели рекуперативные револьверные')(class="img-round")
 		
 			//===SINGLE CATEGORY ===
 			.single-part
 				h3.h3 Другая продукция
 				.d-grid-4
-					.product-card
-						a(href="#!").prod-link
-							.img-wrap
-								img(src="./img/prod6.webp", width="300" height="170" alt="img")
-							.prod-link__body
-								.accent-link Инфракрасная сушилка с рекуперацией
-				
-					a(href="#!").prod-link
-						.img-wrap
-							img(src="./img/prod7.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Системы автоматизации и управления
+					+product-card('prod6', 'Инфракрасная сушилка с рекуперацией')
+					+product-card('prod7', 'Системы автоматизации и управления')
+					
 
 				// кнопка - ссылка Класс mt-48  задает отступ вверх на 48пикс.
 				.mt-40
@@ -122,63 +48,16 @@ section.our-products
 				h3.h3 
 					a(href="#!").link-title Решения
 				.d-grid-4
-					a(href="#!").prod-link
-						.img-wrap
-							img(src="./img/prod8.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Вентиляция с рекуперацией
-				
-					a(href="#!").prod-link
-						.img-wrap
-							img(src="./img/prod9.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Системы вентиляции
-				
-				
-					a(href="#!").prod-link
-						.img-wrap
-							img(src="./img/prod10.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Увлажнение воздуха
-				
-					a(href="#!").prod-link
-						.img-wrap
-							img(src="./img/prod11.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Воздушное отопление
-
-				
-					a(href="#!").prod-link
-						.img-wrap
-							img(src="./img/prod12.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Отопление и вентиляция торговых комплексов
-				
-					a(href="#!").prod-link
-						.img-wrap
-							img(src="./img/prod13.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Обогрев воздухом
-				
-				
-					a(href="#!").prod-link
-						.img-wrap
-							img(src="./img/prod14.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Кондиционирование воздуха
-				
-					a(href="#!").prod-link
-						.img-wrap
-							img(src="./img/prod15.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Система рекуперации тепла воздуха
-
-				
-					a(href="#!").prod-link
-						.img-wrap
-							img(src="./img/prod16.webp", width="300" height="170" alt="img")
-						.prod-link__body
-							.accent-link Рекуператоры воздуха - типы, принцип работы и эффективность
+					+product-card('prod8', 'Вентиляция с рекуперацией')
+					+product-card('prod9', 'Системы вентиляции')
+					+product-card('prod10', 'Увлажнение воздуха')
+					+product-card('prod11', 'Воздушное отопление')
+					+product-card('prod12', 'Отопление и вентиляция торговых комплексов')
+					+product-card('prod13', 'Обогрев воздухом')
+					+product-card('prod14', 'Кондиционирование воздуха')
+					+product-card('prod15', 'Система рекуперации тепла воздуха')
+					+product-card('prod16', 'Рекуператоры воздуха - типы, принцип работы и эффективность')
+					 
 				// кнопка - ссылка Класс mt-48  задает отступ вверх на 48пикс.
 				.mt-40
 					a(href="#!").accent-btn.w-100 Все решения

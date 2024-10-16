@@ -1,0 +1,9 @@
+mixin product-card(img, title, txt)
+	.product-card&attributes(attributes)
+		a(href="product-page.html").product-card__link
+			.product-card__img
+				img(src="./img/"+ img +".webp", width="300" height="170" alt="img")
+			.accent-link !{title}
+		if txt
+			.product-card__txt
+				p !{txt}

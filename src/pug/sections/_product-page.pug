@@ -513,18 +513,122 @@ section.product-description
 			//======================================
 			h2 Выполненные проекты
 			.d-grid-4
-				
+				+product-card('proj1', 'Сушильный цех с рекуператором', 'Цех работает уже более 2х лет и рекуператор снижает мощность на нагрев не менее, чем вдвое')
+				+product-card('proj2', 'Рекуператор для макаронного цеха', 'Рекуператор работает с температурой до 70° С и высоким влагосодержанием')
+				+product-card('proj3', 'ПВУ с рекуперацией для пиццерии', 'Система вентиляции с канальным рекуператором производительностью 3500 м3/час')
+				+product-card('proj4', 'ПВУ с рекуперацией для Алвид', 'Смонтирована приточно-вытяжная установка с рекуперацией на 65000 м3/час и блоком нагрева на 580 кВт')
 					
-				a(href="#!").prod-link
-					.img-wrap
-						img(src="./img/prod6.webp", width="300" height="170" alt="img")
-					.prod-link__body
-						.accent-link Сушильный цех с рекуператором
-						p Цех работает уже более 2х лет и рекуператор снижает мощность на нагрев не менее, чем вдвое
-			
-				a(href="#!").prod-link
-					.img-wrap
-						img(src="./img/prod7.webp", width="300" height="170" alt="img")
-					.prod-link__body
-						.accent-link Системы автоматизации и управления
-				
+			.mt-20
+				a(href="#!").arrow-link
+					span.accent-link Все выполненные проекты
+					svg.svg-arrow-right
+						use(href='./img/sprite.svg#svg-arrow-right')
+			//======================================
+			h2 О нас
+			p НПО Тепловей основано более 25 лет назад и наше производство находится в Челябинске. Мы делаем работы "под ключ" — проектирование, производство, монтаж и обслуживание систем бытового и промышленного воздушного отопления и вентиляции... #[a.accent-link(href="#!") читать далее о НПО Тепловей]
+
+			p Мы серьёзно относимся к качеству нашей продукции. Наше производство сертифицировано ISO-9001 «TUV ZUD Manadgement Servise GmbH» → #[a.accent-link(href="#!") о контроле качества]
+			//======================================
+			h2 Наши преимущества
+			.benefits-grid.d-grid-7
+				.grid-col-4.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-calendar
+								use(href='./img/sprites/regular.svg#calendar-check')
+						.title-29 Опыт с 1995 года
+				.grid-col-4.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-medal
+								use(href='./img/sprites/solid.svg#medal')
+						.title-29 Даем гарантию
+				.grid-col-4.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-clock
+								use(href='./img/sprites/regular.svg#clock')
+						.title-29 Короткий срок поставки
+				.grid-col-3.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-industry
+								use(href='./img/sprites/solid.svg#industry')
+						.title-29 Свое производство
+						p От воздуховодов до сложного оборудования
+				.grid-col-3.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-map-pin
+								use(href='./img/sprites/solid.svg#map-pin')
+						.title-29 Рядом с Вами
+						p Сеть дилеров во многих городах России и СНГ
+				.grid-col-3.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-thumbs-up
+								use(href='./img/sprites/solid.svg#thumbs-up')
+						.title-29 Полный цикл работ
+						p От проектирования до монтажа и пуско-наладки
+				.grid-col-3.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-wrench
+								use(href='./img/sprites/solid.svg#wrench')
+						.title-29 Своя сервисная служба
+						p Реагируем быстро. Запчасти в наличии
+
+			//==================================
+			h2 Полный цикл производства и обслуживания
+			.d-grid-4
+				.product-card
+					.title-29 Проектирование
+					.product-card__img
+						img(src="./img/01prj.webp", width="300" height="170" alt="img")
+					.product-card__txt
+						p Спроектируем новые или #[a.accent-link(href="#!") модернизируем существующие системы вентиляции] и рассчитаем срок окупаемости рекуператора
+						a.accent-link(href="#!") Подробнее о проектировании
+				.product-card
+					.title-29 Производство
+					.product-card__img
+						img(src="./img/02prj.webp", width="300" height="170" alt="img")
+					.product-card__txt
+						p Произведем блоки рекуперации тепла в точности соответствующие требованиям проекта
+						a.accent-link(href="#!") Подробнее о производстве
+				.product-card
+					.title-29 Монтаж и наладка
+					.product-card__img
+						img(src="./img/03prj.webp", width="300" height="170" alt="img")
+					.product-card__txt
+						p Смонтируем систему вентиляции, рекуператор и выполним пуско-наладочные испытания
+						a.accent-link(href="#!") Подробнее о монтаже и пуско-наладке
+				.product-card
+					.title-29 Обслуживание
+					.product-card__img
+						img(src="./img/04prj.webp", width="300" height="170" alt="img")
+					.product-card__txt
+						p Произведем обслуживание систем вентиляции и рекуператоров
+						a.accent-link(href="#!") Подробнее об обслуживании
+
+			//==================================
+			h2 Проектировщикам
+			.d-grid-3
+				//==== внутри  .column-centered контент по горизонтали по центру
+				.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-folder
+								use(href='./img/sprites/solid.svg#folder')
+						.title-29 Промо-материалы
+				.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-book
+								use(href='./img/sprites/solid.svg#book')
+						.title-29 Техническая документация
+				.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-circle-question
+								use(href='./img/sprites/solid.svg#circle-question')
+						.title-29 Консультации

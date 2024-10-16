@@ -15,7 +15,8 @@
 	margin: 0;
 	padding: 0;
 	width: 100%;
-  color: #4f4f4f;;
+  color: #4f4f4f;
+  color: black;
   font-family: $ff, sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -182,7 +183,7 @@ select:-webkit-autofill:focus {
 .d-grid-2, .d-grid-3,
 .d-grid-4,
 .d-grid-5,
-.d-grid-6{
+.d-grid-6,.d-grid-7{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
@@ -247,6 +248,32 @@ select:-webkit-autofill:focus {
     grid-column: span 12;
   }
 }
+.d-grid-7>{
+  .grid-col-4{
+    grid-column: span 4;
+  }
+  .grid-col-3 {
+    grid-column: span 3;
+  }
+  @media (max-width: 1023px) {
+   .grid-col-3{grid-column: span 4;}
+  }
+  @media (max-width: 767px) {
+   .grid-col-3,.grid-col-4{
+    grid-column: span 6;
+   }
+  }
+  @media (max-width: 574px) {
+    .grid-col-3,
+    .grid-col-4 {
+      grid-column: span 12;
+    }
+  }
+}
+.column-centered {
+  display: flex;
+  justify-content: center;
+}
 /*две колонки 4+8*/
 .grid-aside-right>*:last-child,
 .grid-aside-left>*:first-child {
@@ -272,6 +299,7 @@ select:-webkit-autofill:focus {
   margin-top: 40px;
   @media (max-width: 1023px) { margin-top: 32px; }
 }
+.mt-20{margin-top: 20px;}
 .img-over{
   position: relative;
   overflow: hidden;

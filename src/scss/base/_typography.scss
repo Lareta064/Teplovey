@@ -288,8 +288,9 @@
 		line-height: 26px;
 		.title-18{margin-bottom: 0;}
 	}
-	li +li{margin-top: 25px;}
+	li +li{margin-top: 8px;}
 }
+.child-mt-25 li+li{margin-top: 25px;}
 .decore-list li:after{
 	content:'';
 	width: 14px;
@@ -298,13 +299,14 @@
 	background-color: $accent;
 	display: block;
 	position: absolute;
-	top: 5px;
+	top: 6px;
 	left: 0;
 	background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='8px' height='8px' fill='white' viewBox='0 0 8 8' enable-background='new 0 0 8 8' xml:space='preserve'%3E%3Cpath d='M3.021,8c0.181,0,0.335-0.063,0.462-0.19l3.343-3.343C6.956,4.337,7.021,4.182,7.021,4c0-0.186-0.065-0.339-0.195-0.462L3.483,0.195C3.36,0.064,3.206,0,3.021,0C2.84,0,2.684,0.064,2.554,0.195l-0.385,0.38c-0.127,0.133-0.19,0.289-0.19,0.467c0,0.182,0.063,0.336,0.19,0.462L4.664,4L2.169,6.495c-0.127,0.127-0.19,0.281-0.19,0.463c0,0.178,0.063,0.333,0.19,0.467L2.554,7.81C2.688,7.937,2.843,8,3.021,8z'/%3E%3C/svg%3E");
 	background-position: center;
 	background-size:8px;
 	background-repeat: no-repeat;
 }
+.custom-text>*{margin-bottom: 10px;}
 .custom-text ul li{
 	color: $gray;
 	p{margin-bottom: 0;}
@@ -312,8 +314,18 @@
 	transition: .3s;
 	a:hover{color: $accent;}
 }
+ul.flex-list{
+	margin-block:10px;
+}
+ul.flex-list li{
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	line-height: 1.5;
+	strong{color: black;}
+}
 .custom-text table{
-	
+	margin-block:10px;
 	width: 100%;
 	min-width: 1000px;
 	border-collapse: collapse;

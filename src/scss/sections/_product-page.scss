@@ -9,6 +9,7 @@
 		display: block;
 		margin-inline: auto;
 		width: 100%;
+		max-width: 350px;
 		margin-bottom: 20px;
 	  }
 	}
@@ -18,10 +19,27 @@
 	p{
 		margin-block: 10px 30px;
 	}
+	@media (max-width: 767px) {
+	    max-width: 400px;
+		margin-inline: auto;
+		img{
+			display: block;
+			margin-inline: auto;
+		}
+	}
 }
 .filter-container .noUi-pips.noUi-pips-horizontal .noUi-value:last-child{
 	@media (max-width: 1023px) {
 		transform: translate(-90%, 50%);
 	}
 	
+}
+.scheme-item{
+	a{display: block;}
+	img{
+		display: block;
+		width: 100%;
+		aspect-ratio: 5/3;
+		
+	}
 }

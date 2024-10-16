@@ -1,7 +1,8 @@
 .our-products{
 	padding-top: 40px;
 }
-.prod-link{
+.product-card{width: 100%;}
+.prod-link, .product-card__link{
 	width: 100%;
 	&:hover{
 		.accent-link{text-decoration: none;}

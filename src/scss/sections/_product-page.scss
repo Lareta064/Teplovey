@@ -73,3 +73,43 @@ a:has(img){display: block;}
 .benefits-grid{
 	row-gap:70px;
 }
+/***************/
+.faq-entity {
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+
+.faq-question {
+	cursor: pointer;
+	text-decoration: underline;
+	font-family: $fs;
+	
+	color: #000 !important;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 30px;
+
+}
+
+.faq-question:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.faq-response {
+	display: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+}
+
+.faq-click-question {
+	cursor: pointer;
+	text-decoration: underline;
+	
+}
+
+.faq-click-question:hover {
+	cursor: pointer;
+	text-decoration: none;
+}

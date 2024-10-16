@@ -26,6 +26,16 @@
 	font-family: $ff;
 	font-weight: 700;
  }
+ h2{
+	font-size: 26px;
+	margin-bottom: 15px;
+	margin-top: 40px;
+	line-height: 1.1;
+	color: $accent;
+	font-family: $fs;
+	font-weight: 700;
+	text-transform: uppercase;
+ }
 .h3{
 	font-size: 22px;
 }
@@ -48,13 +58,17 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	&>* {
+			color: black !important;margin: 0;
+		}
 	@media (max-width: 767px) {
 	   min-height: 60px;
 	  background-image: url('../img/bg-title-mob.webp');
 	}
 }
 .bg-title{
-	color: white!important;
+	
+	
 	text-transform: uppercase;
 	background: #ff7f00;
 	
@@ -67,7 +81,8 @@
 	margin-bottom: 40px;
 	
 	text-align: center;
-	&>*{line-height: 1.5;}
+	&>*{line-height: 1.5; color: white;margin: 0;}
+
 	@media (max-width: 767px) {
 		margin-bottom: 25px;
 	}
@@ -144,6 +159,7 @@
 .txt-bold {font-weight: 700;}
 .txt-dark{color: $dark;}
 .txt-black{color: black;}
+.txt-white{color: white;}
 .txt-gray {color: $gray;}
 .txt-center{text-align: center;}
 .bg-white{background-color: #fff;}

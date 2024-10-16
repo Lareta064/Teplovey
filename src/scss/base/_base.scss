@@ -235,10 +235,16 @@ select:-webkit-autofill:focus {
 .d-grid-6>* {
   grid-column: span 2;
   @media (max-width: 1199px) {
+    grid-column: span 3;
+  }
+  @media (max-width: 1023px) {
     grid-column: span 4;
   }
   @media (max-width: 767px) {
     grid-column: span 6;
+  }
+  @media (max-width: 574px) {
+    grid-column: span 12;
   }
 }
 /*две колонки 4+8*/

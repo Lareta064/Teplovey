@@ -10,11 +10,13 @@ html(lang="ru")
 		
 		//====убрать синий цвет у ссылок в сафари ========
 		meta(name="format-detection" content="telephone=no")
-		//======= swiper =============
-		link(rel="stylesheet" href="libs/swiper/swiper.min.css" )
 		//===шрифты выносим в head для ускорения загрузки страницы ===
 		style.
-			@font-face{font-family:'OpenSans';src:url(./fonts/OpenSans-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'OpenSans';src:url(./fonts/OpenSans-Bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:'OpenSans';src:url(./fonts/OpenSans-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'OpenSans';src:url(./fonts/OpenSans-SemiBold.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:'OpenSansCondensed';src:url(./fonts/OpenSansCondensed-Bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:'RobotoCondensed';src:url(./fonts/RobotoCondensed-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'RobotoCondensed';src:url(./fonts/RobotoCondensed-Bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:'RobotoCondensed';src:url(./fonts/RobotoCondensed-Light.woff2) format("woff2");font-weight:100;font-style:normal;font-display:swap}@font-face{font-family:'OpenSans';src:url(./fonts/OpenSans-ExtraBold.woff2) format("woff2");font-weight:800;}@font-face{font-family:'OpenSansCondensed';src:url(./fonts/OpenSansCondensed-Light.woff2) format("woff2");font-weight:300;font-style:normal;font-display:swap}		
+			@font-face{font-family:'OpenSans';src:url(./fonts/OpenSans-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'OpenSans';src:url(./fonts/OpenSans-Bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:'OpenSans';src:url(./fonts/OpenSans-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'OpenSans';src:url(./fonts/OpenSans-SemiBold.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:'OpenSansCondensed';src:url(./fonts/OpenSansCondensed-Bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:'RobotoCondensed';src:url(./fonts/RobotoCondensed-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'RobotoCondensed';src:url(./fonts/RobotoCondensed-Bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:'RobotoCondensed';src:url(./fonts/RobotoCondensed-Light.woff2) format("woff2");font-weight:100;font-style:normal;font-display:swap}@font-face{font-family:'OpenSans';src:url(./fonts/OpenSans-ExtraBold.woff2) format("woff2");font-weight:800;}@font-face{font-family:'OpenSansCondensed';src:url(./fonts/OpenSansCondensed-Light.woff2) format("woff2");font-weight:300;font-style:normal;font-display:swap}
+		//======= swiper =============
+		link(rel="stylesheet" href="libs/swiper/swiper.min.css" )
+		//=======fancybox =============
+		link(rel="stylesheet" href="./libs/fancybox/fancybox.css" )
 		//===custom styles===
 		link(rel="stylesheet", href="css/main.css")
 		
@@ -29,9 +31,11 @@ html(lang="ru")
 		script(src="./libs/jquery.lazy.min.js")
 		//===swiper===
 		script(src="./libs/swiper/swiper.js")
+		script(src="./libs/fancybox/fancybox.js")
+
 		//====RECUPERATOR====
 		script(src="./js/nouislider.min.js")
 		script(src="./js/recuperator.js")
-		script(src="./js/main.js")
+		
 		//=== custom scripts ===
 		script(src="./js/main.js")

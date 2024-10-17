@@ -65,7 +65,28 @@
     background-image: none;
     }
   }
-  
+  .has-overlay{
+    position: relative;
+   
+    
+  }
+  .overlay{
+    position: absolute;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, transparent);
+    inset:0;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    @media (max-width: 1439px) {
+        display: none;
+      }
+  }
+   .has-overlay .section-title,
+   .has-overlay  .overlay  ~ *{
+      z-index: 2;
+      position: relative;
+      
+    }
   .bg-transpr{background-color: transparent;}
   
   a{color: inherit; display: inline-block;}
@@ -195,7 +216,7 @@ select:-webkit-autofill:focus {
 /*две колонки*/
 .d-grid-2>*{
   grid-column: span 6;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
   grid-column: span 12;
   }
 }
@@ -300,6 +321,9 @@ select:-webkit-autofill:focus {
   @media (max-width: 1023px) { margin-top: 32px; }
 }
 .mt-20{margin-top: 20px;}
+.mt-10 {
+  margin-top: 10px;
+}
 .img-over{
   position: relative;
   overflow: hidden;

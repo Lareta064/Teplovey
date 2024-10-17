@@ -113,3 +113,45 @@ a:has(img){display: block;}
 	cursor: pointer;
 	text-decoration: none;
 }
+.contacts-card{
+   padding: 15px;
+   color: #858585;
+   border:1px solid #d2d2d2;
+  background-color: #ebebeb;
+  &__title{
+	font-family: $fs;
+	text-transform: uppercase;
+	color: #ff6d00 !important;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-bottom: 15px !important;
+  }
+  li +li{margin-top: 10px;}
+  .contacts-specialist__name{
+	span{display: block;}
+  }
+}
+.contacts-card.contacts-specialist{
+	padding-left: 60px;
+	color: black;
+	position: relative;
+	.contacts-specialist__icon{
+		position: absolute;
+		left: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		svg{
+		width: 26px;
+		height: 26px;
+		fill: #858585;	
+		}
+	}
+	&>*+*{margin-top: 10px;}
+	ul + *{margin-top: 0;}
+	
+}
+.inner-contacts{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}

@@ -247,6 +247,7 @@ main {
 		display: flex;
 	   align-items: center;
 	   justify-content: space-between;
+	   h1{margin-bottom: 0;}
 	   .breadcrumbs{
 		flex-shrink: 0;
 	   }
@@ -365,7 +366,7 @@ main {
 	background-repeat: no-repeat;
 }
 .custom-text>*{margin-bottom: 10px;}
-.custom-text ul li{
+.simple-list ul li{
 	color: $gray;
 	p{margin-bottom: 0;}
 	

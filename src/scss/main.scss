@@ -22,3 +22,31 @@
  @import "sections/single-product";
 
  @import "sections/footer";
+ .start-page{
+	text-align: center;
+	padding-top: 60px;
+
+	h1{
+		font-size: 50px;
+		font-family: $fs;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+ .start-page a{
+	width: 100%;
+	text-align: center;
+	border:1px solid grey;
+	border-radius: 10px;
+	font-size: 22px;
+	font-family: $fs;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	font-weight: 700;
+	&:first-child{
+		grid-column: span 12;
+	}
+ }

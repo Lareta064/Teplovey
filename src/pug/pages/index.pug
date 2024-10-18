@@ -1,23 +1,17 @@
 extends ../layouts/layout.pug
 
 block content
-	.page-wrapper
-		//HEADER
-		include ../sections/_header.pug
-		//MAIN
-		main.main
-			include ../sections/_promo.pug
-			include ../sections/_our-products.pug
-			include ../sections/_our-projects.pug
-			include ../sections/_our-results.pug
-			include ../sections/_our-benefits.pug
-			include ../sections/_our-clients.pug
-
-
-
-
-		//FOOTER
-		include ../sections/_footer.pug
+	.page-wrapper.start-page
+		.container
+			h1 Тепловей 
+			.d-grid-3
+				a(href="main.html") Главная
+				a(href="quality.html") Качество
+				a(href="product-page.html") Страница категории
+				a(href="vozd.html") Воздухонагреватели
+				a(href="models.html") Модели
+				a(href="single-product.html") Страница одного товара
+				a(href="contacts.html") Контакты
 	
 	
 block variables

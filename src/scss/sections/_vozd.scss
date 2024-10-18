@@ -1,3 +1,4 @@
-.custom-text__block{
-	h2{margin-top: 0;}
+.product-description__row +.product-description__row, .custom-text__block>*+* {
+	margin-top: 35px;
+	
 }

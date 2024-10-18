@@ -300,7 +300,7 @@
 	p{line-height: 24px; color: #4f4f4f;}
 
 }
-.decore-list{
+.custom-text .decore-list, .decore-list{
 	list-style-type: none;
 	li{
 		position: relative;
@@ -311,7 +311,7 @@
 	li +li{margin-top: 8px;}
 }
 .child-mt-25 li+li{margin-top: 25px;}
-.decore-list li:after{
+.custom-text .decore-list li:after, .decore-list li:after{
 	content:'';
 	width: 14px;
 	height: 14px;
@@ -334,10 +334,11 @@
 	transition: .3s;
 	a:hover{color: $accent3;}
 }
-ul.flex-list{
+.custom-text ul.flex-list, ul.flex-list{
 	margin-block:10px;
+	list-style-type: none;
 }
-ul.flex-list li{
+.custom-text ul.flex-list li, ul.flex-list li{
 	display: flex;
 	align-items: center;
 	font-size: 15px;

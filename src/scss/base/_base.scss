@@ -19,6 +19,7 @@
   color: black;
   font-family: $ff, sans-serif;
   font-size: 15px;
+  line-height: 1.6;
   font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 
@@ -105,7 +106,9 @@
 	padding: 0;
 	margin: 0;
   }
- 
+ ul{
+  list-style-type: disc;
+ }
   img {
 	max-width: 100%;
 	height: auto;
@@ -317,8 +320,8 @@ select:-webkit-autofill:focus {
  
 }
 .mt-40 {
-  margin-top: 40px;
-  @media (max-width: 1023px) { margin-top: 32px; }
+  margin-top: 40px!important;
+  @media (max-width: 1023px) { margin-top: 32px!important; }
 }
 .mt-20{margin-top: 20px;}
 .mt-10 {

@@ -17,6 +17,22 @@
 		line-height: 1.5;
 	}
 }
+main {
+
+	h1,
+	.h1 {
+		font-size: 36px;
+		text-transform: uppercase;
+		font-family: $fs;
+		line-height: 1.1;
+		font-weight: 800;
+		color: black;
+		margin-bottom: 15px;
+		@media (max-width: 359px) {
+			font-size: 28px;
+		}
+	}
+}
 .h2, .title, .title-18{
 	font-size: 18px;
 	line-height: 1.05;
@@ -148,7 +164,7 @@
 .roboto-accent{
 	font-family: $ft;
 }
-.accent-link{
+.accent-link,.decore-link{
 	font-size: 15px;
 	position: relative;
 	width: fit-content;
@@ -156,6 +172,7 @@
 	text-decoration-skip: none;
 	&:hover{text-decoration:none;}
 }
+
 .arrow-link{
 	display: inline-flex;
 	column-gap:6px;
@@ -165,7 +182,8 @@
 	}
 }
 .txt-accent, .roboto-accent{color: $accent;}
-.accent-link {
+.decore-link{padding-left: 18px;}
+.accent-link,.decore-link{
 	color: $accent3;
 }
 .txt-light{font-weight: 100;}
@@ -251,18 +269,16 @@
 		}
 	}
 }
-
+.breadcrumbs.bg-light{
+	margin-bottom: 30px;
+}
 .breadcrumbs.bg-dark,
 .breadcrumbs.bg-light {
 	padding: 4px 10px;
 }
 
-.breadcrumbs.bg-dark {
-	background-color: rgba(15, 18, 19, 0.1);
-}
-
-.breadcrumbs.bg-light {
-	background-color: rgba(255, 255, 255, 0.12);
+.breadcrumbs.bg-light li{
+	color: rgba(0, 0, 0, 1);
 }
 
 .breadcrumbs li {
@@ -279,12 +295,12 @@
 }
 
  .breadcrumbs li:before{
+	content: "/";
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 15px;
 	height: 13px;
-	content: "/";
 	opacity: 0.5;
 	text-align: left;
 	z-index: 3;
@@ -305,9 +321,9 @@
 		font-size: 22px;
 		line-height: 26px;
 		margin-top: 40px;
-		margin-bottom: 40px;
+		margin-bottom: 15px;
 	}
-	h2{font-size: 26px; margin-bottom: 15px;line-height: 1.1; color: $accent;}
+	h2{font-size: 26px; line-height: 1.1; color: $accent;}
 	h4{
 		margin-top: 25px;
 		color:$gray;
@@ -328,8 +344,12 @@
 	}
 	li +li{margin-top: 8px;}
 }
+.decore-link{
+	position: relative;
+
+}
 .child-mt-25 li+li{margin-top: 25px;}
-.custom-text .decore-list li:after, .decore-list li:after{
+.custom-text .decore-list li:after, .decore-list li:after,.decore-link:after{
 	content:'';
 	width: 14px;
 	height: 14px;
@@ -367,7 +387,7 @@
 .custom-text table{
 	margin-block:10px;
 	width: 100%;
-	min-width: 1000px;
+	
 	border-collapse: collapse;
 	border-spacing: 0;
 	border: 2px solid black;

@@ -1,4 +1,4 @@
-.accent-btn{
+.accent-btn, .blue-btn{
    display: inline-flex;
    justify-content: center;
    align-items: center;
@@ -32,5 +32,13 @@
 .accent-btn.w-100 {
 	@media (max-width: 767px) {
 	  width: 100%;
+	}
+}
+.blue-btn{
+	border-color: #58b9da;
+    background-color: #58b9da;
+	&:hover{
+		border-color: #3fafd4;
+		background-color: #3fafd4;
 	}
 }

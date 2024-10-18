@@ -30,7 +30,7 @@
 	font-size: 26px;
 	margin-bottom: 15px;
 	margin-top: 40px;
-	line-height: 1.1;
+	// line-height: 1.1;
 	color: $accent;
 	font-family: $fs;
 	font-weight: 700;
@@ -67,8 +67,6 @@
 	}
 }
 .bg-title{
-	
-	
 	text-transform: uppercase;
 	background: #ff7f00;
 	
@@ -109,6 +107,18 @@
 	}
 }
 .mt-30{margin-top: 30px;}
+.info-link{
+	width: 15px;
+	height: 15px;
+	border:1px solid $accent;
+	text-align: center;
+	line-height: 13px;
+	font-size: 13px;
+	color: $accent;
+	border-radius: 50%;
+	transition: .3s; 
+	&:hover{opacity: .5;}
+}
 .link-title{
 	width: fit-content;
 	position: relative;
@@ -201,12 +211,20 @@
 	}
 	.accent-btn {margin-top: 16px;}
 }
+
 .inner-hero{
 	min-height: 100px;
 	display: flex;
 	align-items: center;
+	background-size: cover;
+	background-position: center;
 	background: #e86b06 url('../img/bg2.webp');
 	padding-block:15px;
+	&+*{padding-top: 20px;}
+	@media (max-width: 1919px) {
+		background-size: contain;
+		background-repeat: repeat;
+	}
 	.container{
 		display: flex;
 	   align-items: center;

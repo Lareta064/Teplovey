@@ -1,0 +1,524 @@
+section.models.has-overlay
+	.container
+		.overlay
+		.custom-text
+			p Рекуператор это теплообменник «воздух-воздух» пластинчатого (мембранного) типа из полимерной пленки мембраны и каркаса. Мы изготавливаем рекуператоры как в виде отдельного блока, так и в виде секции для вентиляционной установки.
+			
+			//========================================
+			h2 Подобрать рекуператор
+			p Подберите рекуператор по параметрам вашей вентиляционной системы.
+			
+			//  Фильтр 
+			.filter-container
+				form.filter-form#filter-form
+					.filter-form-row.area-flow
+						.filter-form-row__title Скорость потока воздуха
+						.filter-form-row__vals
+							label.filter-radio
+								input(type='radio' name='airflow_speed' value='4' checked)
+								span 4 м/с
+							label.filter-radio
+								input(type='radio' name='airflow_speed' value='6')
+								span 6 м/с
+							label.filter-radio
+								input(type='radio' name='airflow_speed' value='8')
+								span 8 м/с
+					.filter-form-row.area-airflow
+						.filter-form-row__title
+							| Расход воздуха, м
+							sup 3
+							| /ч
+						.filter-form-row__vals.range-input
+							input#airflow(type='number' max='130000' min='500' name='airflow_rate' placeholder='1000')
+							.filter-form-row__range#airflow-range
+					.filter-form-row.area-buttons
+						.filter-form-row__title  
+						button.filter-form-row__submit.btn.btn-orange(type='submit' onclick='dataLayer.push({\'event\': \'rekup-podbor-click\'});') Подобрать
+					.filter-form__alert.area-alert
+						.filter-form__info(data-val='500')
+							svg(xmlns='http://www.w3.org/2000/svg' version='1.1' xlink='http://www.w3.org/1999/xlink' width='24' height='24' x='0' y='0' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512' space='preserve')
+								g
+									path(d='M256 0C114.509 0 0 114.496 0 256c0 141.489 114.496 256 256 256 141.491 0 256-114.496 256-256C512 114.511 397.504 0 256 0zm0 476.279c-121.462 0-220.279-98.816-220.279-220.279S134.538 35.721 256 35.721 476.279 134.537 476.279 256 377.462 476.279 256 476.279z' fill='#ff8800')
+									path(d='M256.006 213.397c-15.164 0-25.947 6.404-25.947 15.839v128.386c0 8.088 10.783 16.174 25.947 16.174 14.49 0 26.283-8.086 26.283-16.174V229.234c0-9.434-11.793-15.837-26.283-15.837zM256.006 134.208c-15.501 0-27.631 11.12-27.631 23.925 0 12.806 12.131 24.263 27.631 24.263 15.164 0 27.296-11.457 27.296-24.263 0-12.805-12.133-23.925-27.296-23.925z' fill='#ff8800')
+							div
+								p
+									| В нашем стандартном модельном ряду есть модели от 500 м
+									sup 3
+									| /ч, но мы производим оборудование и по индивидуальным заказам.
+								| .
+
+								p
+									a(href='#feedback' onclick='feedbackForm()') Отправьте заявку
+									|  и мы предложим Вам индивидуальное решение.
+						.filter-form__info(data-val='130000')
+							svg(xmlns='http://www.w3.org/2000/svg' version='1.1' xlink='http://www.w3.org/1999/xlink' width='24' height='24' x='0' y='0' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512' space='preserve')
+								g
+									path(d='M256 0C114.509 0 0 114.496 0 256c0 141.489 114.496 256 256 256 141.491 0 256-114.496 256-256C512 114.511 397.504 0 256 0zm0 476.279c-121.462 0-220.279-98.816-220.279-220.279S134.538 35.721 256 35.721 476.279 134.537 476.279 256 377.462 476.279 256 476.279z' fill='#ff8800')
+									path(d='M256.006 213.397c-15.164 0-25.947 6.404-25.947 15.839v128.386c0 8.088 10.783 16.174 25.947 16.174 14.49 0 26.283-8.086 26.283-16.174V229.234c0-9.434-11.793-15.837-26.283-15.837zM256.006 134.208c-15.501 0-27.631 11.12-27.631 23.925 0 12.806 12.131 24.263 27.631 24.263 15.164 0 27.296-11.457 27.296-24.263 0-12.805-12.133-23.925-27.296-23.925z' fill='#ff8800')
+							div
+								p
+									| Наши стандартные модели обеспечивают производительность до 130 000 м
+									sup 3
+									| /ч.
+									br
+									| Если вам нужно больше - 
+									a(href='#feedback' onclick='feedbackForm()') отправьте заявку
+									| , мы подберем для вас индивидуальное решение.
+						.filter-form__info(data-val='0')
+							svg(xmlns='http://www.w3.org/2000/svg' version='1.1' xlink='http://www.w3.org/1999/xlink' width='24' height='24' x='0' y='0' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512' space='preserve')
+								g
+									path(d='M256 0C114.509 0 0 114.496 0 256c0 141.489 114.496 256 256 256 141.491 0 256-114.496 256-256C512 114.511 397.504 0 256 0zm0 476.279c-121.462 0-220.279-98.816-220.279-220.279S134.538 35.721 256 35.721 476.279 134.537 476.279 256 377.462 476.279 256 476.279z' fill='#ff8800')
+									path(d='M256.006 213.397c-15.164 0-25.947 6.404-25.947 15.839v128.386c0 8.088 10.783 16.174 25.947 16.174 14.49 0 26.283-8.086 26.283-16.174V229.234c0-9.434-11.793-15.837-26.283-15.837zM256.006 134.208c-15.501 0-27.631 11.12-27.631 23.925 0 12.806 12.131 24.263 27.631 24.263 15.164 0 27.296-11.457 27.296-24.263 0-12.805-12.133-23.925-27.296-23.925z' fill='#ff8800')
+							div
+								p
+									| К сожалению, мы не смогли подобрать подходящие варианты среди серийных моделей. Вы можете 
+									a(href='#feedback' onclick='feedbackForm()') оставить заявку
+									| , и мы предложим вам подходящее индивидуальное решение.
+				.filter-result#filter-result
+			//========================================
+
+			h2 Весь модельный ряд
+			.models-line.cards-grid-4
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model-variant.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPL.80.30.33.06.1
+					.model-card__body
+						ul
+							li Компоновка: #[strong Моноблок] #[a.info-link(href="#!") i]
+							li Тип: #[strong Противоточный]
+							li Макс. расход при 4 м/с: #[strong 540 м3/с]
+							li Макс. расход при 6 м/с: #[strong 810 м3/с]
+							li Макс. расход при 8 м/с: #[strong 1080 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model-variant.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPL.120.60.55.06.4
+					.model-card__body
+						ul
+							li Компоновка: #[strong Моноблок] #[a.info-link(href="#!") i]
+							li Тип: #[strong Противоточный]
+							li Макс. расход при 4 м/с: #[strong 1728 м3/с]
+							li Макс. расход при 6 м/с: #[strong 2592 м3/с]
+							li Макс. расход при 8 м/с: #[strong 3456 м3/с]
+							li Цена: #[strong по запросу]
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model-variant.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPL.120.80.55.06.5
+					.model-card__body
+						ul
+							li Компоновка: #[strong Моноблок] #[a.info-link(href="#!") i]
+							li Тип: #[strong Противоточный]
+							li Макс. расход при 4 м/с: #[strong 2304 м3/с]
+							li Макс. расход при 6 м/с: #[strong 3456 м3/с]
+							li Макс. расход при 8 м/с: #[strong 4608 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model-variant.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPL.160.120.55.06.10
+					.model-card__body
+						ul
+							li Компоновка: #[strong Моноблок] #[a.info-link(href="#!") i]
+							li Тип: #[strong Противоточный]
+							li Макс. расход при 4 м/с: #[strong 4752 м3/с]
+							li Макс. расход при 6 м/с: #[strong 7128 м3/с]
+							li Макс. расход при 8 м/с: #[strong 9504 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model3.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.1.100.100.1.7
+					.model-card__body
+						ul
+							li Компоновка: #[strong Моноблок] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 7200 м3/с]
+							li Макс. расход при 6 м/с: #[strong 10800 м3/с]
+							li Макс. расход при 8 м/с: #[strong 14400 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model3.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.1.100.150.1.11
+					.model-card__body
+						ul
+							li Компоновка: #[strong Моноблок] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 10800 м3/с]
+							li Макс. расход при 6 м/с: #[strong 16200 м3/с]
+							li Макс. расход при 8 м/с: #[strong 21600 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model3.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.1.100.200.1.15
+					.model-card__body
+						ul
+							li Компоновка: #[strong Моноблок] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 14400 м3/с]
+							li Макс. расход при 6 м/с: #[strong 21600 м3/с]
+							li Макс. расход при 8 м/с: #[strong 28800 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model3.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.1.100.250.1.18
+					.model-card__body
+						ul
+							li Компоновка: #[strong Моноблок] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 18000 м3/с]
+							li Макс. расход при 6 м/с: #[strong 27000 м3/с]
+							li Макс. расход при 8 м/с: #[strong 36000 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model3.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.4.100.100.1.7
+					.model-card__body
+						ul
+							li Компоновка: #[strong Сборный на 4 блока ] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 14400 м3/с]
+							li Макс. расход при 6 м/с: #[strong 21600 м3/с]
+							li Макс. расход при 8 м/с: #[strong 28800 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model3.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.4.100.150.1.11
+					.model-card__body
+						ul
+							li Компоновка: #[strong Сборный на 4 блока ] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 21600 м3/с]
+							li Макс. расход при 6 м/с: #[strong 32400 м3/с]
+							li Макс. расход при 8 м/с: #[strong 43200 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model3.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.4.100.200.1.15
+					.model-card__body
+						ul
+							li Компоновка: #[strong Сборный на 4 блока ] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 28800 м3/с]
+							li Макс. расход при 6 м/с: #[strong 43200 м3/с]
+							li Макс. расход при 8 м/с: #[strong 57600 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model3.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.4.100.250.4.18
+					.model-card__body
+						ul
+							li Компоновка: #[strong Сборный на 4 блока ] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 36000 м3/с]
+							li Макс. расход при 6 м/с: #[strong 54000 м3/с]
+							li Макс. расход при 8 м/с: #[strong 72000 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model4.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.9.100.100.1.7
+					.model-card__body
+						ul
+							li Компоновка: #[strong Сборный на 9 блоков ] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 21600 м3/с]
+							li Макс. расход при 6 м/с: #[strong 32400 м3/с]
+							li Макс. расход при 8 м/с: #[strong 43200 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model4.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.9.100.150.1.11
+					.model-card__body
+						ul
+							li Компоновка: #[strong Сборный на 9 блоков ] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 32400 м3/с]
+							li Макс. расход при 6 м/с: #[strong 48600 м3/с]
+							li Макс. расход при 8 м/с: #[strong 64800 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать			
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model4.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.9.100.200.1.15
+					.model-card__body
+						ul
+							li Компоновка: #[strong Сборный на 9 блоков ] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 46200 м3/с]
+							li Макс. расход при 6 м/с: #[strong 64800 м3/с]
+							li Макс. расход при 8 м/с: #[strong 86400 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать
+
+				.model-card
+					a(href="#!").model-card__link
+						img(src="./img/model4.webp",  width="380" height="242" alt="img")
+						.accent-link Противоточный рекуператор PSV.RPX.9.100.250.1.18
+					.model-card__body
+						ul
+							li Компоновка: #[strong Сборный на 9 блоков ] #[a.info-link(href="#!") i]
+							li Тип: #[strong Перекрестноточный]
+							li Макс. расход при 4 м/с: #[strong 54000 м3/с]
+							li Макс. расход при 6 м/с: #[strong 81000 м3/с]
+							li Макс. расход при 8 м/с: #[strong 108000 м3/с]
+							li Цена: по запросу
+						a(href="#!").accent-btn Заказать	
+
+		
+			//============О нас=====================
+			h2 О нас
+			p НПО Тепловей основано более 25 лет назад и наше производство находится в Челябинске. Мы делаем работы "под ключ" — проектирование, производство, монтаж и обслуживание систем бытового и промышленного воздушного отопления и вентиляции... #[a.accent-link(href="#!") читать далее о НПО Тепловей]
+
+			p Мы серьёзно относимся к качеству нашей продукции. Наше производство сертифицировано ISO-9001 «TUV ZUD Manadgement Servise GmbH» → #[a.accent-link(href="#!") о контроле качества]
+			//==============Наши преимущества================
+			h2 Наши преимущества
+			.benefits-grid.d-grid-7
+				.grid-col-4.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-calendar
+								use(href='./img/sprites/regular.svg#calendar-check')
+						.title-29 Опыт с 1995 года
+				.grid-col-4.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-medal
+								use(href='./img/sprites/solid.svg#medal')
+						.title-29 Даем гарантию
+				.grid-col-4.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-clock
+								use(href='./img/sprites/regular.svg#clock')
+						.title-29 Короткий срок поставки
+				.grid-col-3.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-industry
+								use(href='./img/sprites/solid.svg#industry')
+						.title-29 Свое производство
+						p От воздуховодов до сложного оборудования
+				.grid-col-3.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-map-pin
+								use(href='./img/sprites/solid.svg#map-pin')
+						.title-29 Рядом с Вами
+						p Сеть дилеров во многих городах России и СНГ
+				.grid-col-3.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-thumbs-up
+								use(href='./img/sprites/solid.svg#thumbs-up')
+						.title-29 Полный цикл работ
+						p От проектирования до монтажа и пуско-наладки
+				.grid-col-3.column-centered
+					.benefits-item
+						.icon-wrapper
+							svg.svg-wrench
+								use(href='./img/sprites/solid.svg#wrench')
+						.title-29 Своя сервисная служба
+						p Реагируем быстро. Запчасти в наличии
+
+			//======================================
+			h2 Фото наших рекуператоров
+			.d-grid-6.product-gallery
+				a(href="./img/r1.webp" data-fancybox="gallery")
+					img(src="./img/r1.webp",width="175" height="175" alt="img")
+				a(href="./img/r2.webp" data-fancybox="gallery")
+					img(src="./img/r2.webp",width="175" height="175" alt="img")
+				a(href="./img/r3.webp" data-fancybox="gallery")
+					img(src="./img/r3.webp",width="175" height="175" alt="img")
+				a(href="./img/r4.webp" data-fancybox="gallery")
+					img(src="./img/r4.webp",width="175" height="175" alt="img")
+				a(href="./img/r5.webp" data-fancybox="gallery")
+					img(src="./img/r5.webp",width="175" height="175" alt="img")
+				a(href="./img/r6.webp" data-fancybox="gallery")
+					img(src="./img/r6.webp",width="175" height="175" alt="img")
+				a(href="./img/r7.webp" data-fancybox="gallery")
+					img(src="./img/r7.webp",width="175" height="175" alt="img")
+				a(href="./img/r8.webp" data-fancybox="gallery")
+					img(src="./img/r8.webp",width="175" height="175" alt="img")
+				a(href="./img/r9.webp" data-fancybox="gallery")
+					img(src="./img/r9.webp",width="175" height="175" alt="img")
+				a(href="./img/r10.webp" data-fancybox="gallery")
+					img(src="./img/r10.webp",width="175" height="175" alt="img")
+				a(href="./img/r11.webp" data-fancybox="gallery")
+					img(src="./img/r11.webp",width="175" height="175" alt="img")
+				a(href="./img/r12.webp" data-fancybox="gallery")
+					img(src="./img/r12.webp",width="175" height="175" alt="img")
+
+			//===========БЛОК  Выполненные проекты============
+			h2 Выполненные проекты
+			.d-grid-4
+				+product-card('proj1', 'Сушильный цех с рекуператором', 'Цех работает уже более 2х лет и рекуператор снижает мощность на нагрев не менее, чем вдвое')
+				+product-card('proj2', 'Рекуператор для макаронного цеха', 'Рекуператор работает с температурой до 70° С и высоким влагосодержанием')
+				+product-card('proj3', 'ПВУ с рекуперацией для пиццерии', 'Система вентиляции с канальным рекуператором производительностью 3500 м3/час')
+				+product-card('proj4', 'ПВУ с рекуперацией для Алвид', 'Смонтирована приточно-вытяжная установка с рекуперацией на 65000 м3/час и блоком нагрева на 580 кВт')
+					
+			.mt-20
+				a(href="#!").arrow-link
+					span.accent-link Все выполненные проекты
+					svg.svg-arrow-right
+						use(href='./img/sprite.svg#svg-arrow-right')
+			
+			//========Полный цикл=================
+			h2 Полный цикл производства и обслуживания
+			.d-grid-4.full-process
+				.product-card
+					.title-29 Проектирование
+					.product-card__img
+						img(src="./img/01prj.webp", width="300" height="170" alt="img")
+					.product-card__txt
+						p Спроектируем новые или #[a.accent-link(href="#!") модернизируем существующие системы вентиляции] и рассчитаем срок окупаемости рекуператора
+						a.accent-link(href="#!") Подробнее о проектировании
+				.product-card
+					.title-29 Производство
+					.product-card__img
+						img(src="./img/02prj.webp", width="300" height="170" alt="img")
+					.product-card__txt
+						p Произведем блоки рекуперации тепла в точности соответствующие требованиям проекта
+						a.accent-link(href="#!") Подробнее о производстве
+				.product-card
+					.title-29 Монтаж и наладка
+					.product-card__img
+						img(src="./img/03prj.webp", width="300" height="170" alt="img")
+					.product-card__txt
+						p Смонтируем систему вентиляции, рекуператор и выполним пуско-наладочные испытания
+						a.accent-link(href="#!") Подробнее о монтаже и пуско-наладке
+				.product-card
+					.title-29 Обслуживание
+					.product-card__img
+						img(src="./img/04prj.webp", width="300" height="170" alt="img")
+					.product-card__txt
+						p Произведем обслуживание систем вентиляции и рекуператоров
+						a.accent-link(href="#!") Подробнее об обслуживании
+
+			
+			//=======вопросы=======
+			h2 Часто задаваемые вопросы
+			ul.faq.decore-list(itemscope itemtype='https://schema.org/FAQPage')
+				li.faq-entity(itemscope itemprop='mainEntity' itemtype='https://schema.org/Question')
+					span.faq-question(itemprop='name') Насколько полимерные рекуператоры пожароопасны?
+					.faq-response(itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer')
+						div(itemprop='text')
+							p Наши рекуператоры соответствуют классу горючести Г1
+						span.faq-click-question Закрыть
+				li.faq-entity(itemscope itemprop='mainEntity' itemtype='https://schema.org/Question')
+					span.faq-question(itemprop='name') Как полимерный рекуператор реагирует на отрицательные температуры и обмерзание?
+					.faq-response(itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer')
+						div(itemprop='text')
+							p Полимерный рекуператор не боится обмерзания. При замёрзании компоненты рекуператора не разрушаются и полностью восстанавливаются при оттаивании. И даже при замёрзании продолжает работать.
+							p Поверхностная энергия ПЭТ-плёнки в 29 раз меньше поверхностной энергии алюминия, поэтому у ПЭТ плёнки кратно меньше адгезия капель воды. Если образуется конденсат, то он собирается в капли на ПЭТ-плёнке, а не образует пленку, как, например, на металле.
+							p.
+								Намерзшие на поверхности капельки льда скатываются с поверхности рекуператора за счёт вибрации от воздушного потока.
+						span.faq-click-question Закрыть
+				
+				li.faq-entity(itemscope itemprop='mainEntity' itemtype='https://schema.org/Question')
+					span.faq-question(itemprop='name') Можно ли применять такие рекуператоры на пищевых производствах?
+					.faq-response(itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer')
+						div(itemprop='text')
+							p Наши рекуператоры применимы и применяются на пищевых производствах, используются для рекуперации тепла дымовых газов. Потоки в наших рекуператорах не смешиваются, передачи влаги или загрязнений не происходит.
+							p Поверхностная энергия ПЭТ-плёнки в 29 раз меньше поверхностной энергии алюминия, поэтому у ПЭТ плёнки кратно меньше адгезия загрязняющих веществ. Его можно применять на производствах с едкими кислотными испарениями, например, на предприятиях металлургии, химической промышленности, птичниках, животноводческих фермах, медицинских производствах, производствах изделий из металлов.
+							p Смотрите наши объекты в разделе #[a(href='/cases/') Выполненные проекты]
+						span.faq-click-question Закрыть
+				
+				li.faq-entity(itemscope itemprop='mainEntity' itemtype='https://schema.org/Question')
+					span.faq-question(itemprop='name') Какой эффективности могут достигать такие рекуператоры?
+					.faq-response(itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer')
+						div(itemprop='text')
+							p Практически достигнутый и измеренный нами показатель эффективности в реальных условиях — более 60%!
+							p Это очень хороший показатель. Если производитель заявляет эффективность, например, 90%, то этот показатель практически не достижим даже в идеальных условиях в лаборатории. На реальных объектах такой эффективности не получить.
+							p Регулируемая вибрация плёнки в полимерном рекуператоре позволяет получать оптимальный коэффициент теплопередачи за счёт разрушения пристенного ламинарного слоя воздушного потока и его турбулизации.
+								
+						span.faq-click-question Закрыть
+				li.faq-entity(itemscope itemprop='mainEntity' itemtype='https://schema.org/Question')
+					span.faq-question(itemprop='name') Где производятся полимерные рекуператоры?
+					.faq-response(itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer')
+						div(itemprop='text')
+							p Полимерные рекуператоры и вентиляционные установки производятся в Челябинске на собственном производстве НПО Тепловей.
+							p Мы - производитель систем промышленной вентиляции и воздушного отопления с 1995 года. 
+								a(href='/about/') Подробнее о нас
+								|  и 
+								a(href='/products/') нашей продукции
+								| .
+
+						span.faq-click-question Закрыть
+				li.faq-entity(itemscope itemprop='mainEntity' itemtype='https://schema.org/Question')
+					span.faq-question(itemprop='name') Как расшифровать артикул рекуператора производства НПО Тепловей
+					.faq-response(itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer')
+						div(itemprop='text')
+							p.
+								В артикуле рекуператоров производства НПО Тепловей зашифрованы его характеристики и особенности конструкции.
+								
+							p.
+								
+								Пример артикула нашего рекуператора: PSV.RPX.1.30.50.06.2
+								
+							p.
+								
+								Для расшифровки воспользуйтесь 
+								a(href='https://teplovey.ru/reviews/artikul-rekup/') нашей инструкцией
+						span.faq-click-question Закрыть
+//=======contacts cards ======
+section.inner-contacts
+	.container
+		//===contacts cards =====
+		.contacts-cards.d-grid-2
+			//======contacts-card======
+			.contacts-card.contacts-specialist
+				.contacts-specialist__icon
+					svg.svg-circle-question
+						use(href='./img/sprites/solid.svg#circle-question')
+				.contacts-card__title Задайте вопрос специалисту
+				.contacts-specialist__name
+					p
+						strong Давыдов Илья Сергеевич
+						span ведущий инженер проектов
+				ul.flex-list
+					li
+						span email
+						a(href="mailto:tochka_ros@bk.ru").accent-link tochka_ros@bk.ru
+					li
+						span Телефон:
+						a(href="tel:+73512200530").accent-link tochka_ros@bk.ru +7 (351) 220-05-30
+				a(href="#!").accent-link Отправить заявку на рекуператор
+				.contacts-card__btn
+					a.accent-btn(href="#!" ) 
+						svg.svg-check
+							use(href='./img/sprite.svg#svg-check')
+						span Заполнить опросный лист на расчет онлайн
+			//======contacts-card======
+			.contacts-card
+				.contacts-card__title Как купить
+				
+				ul.decore-list
+					li Заказать напрямую в НПО Тепловей
+					li Обратиться к дилерам
+				.mt-10
+					p Наше производство расположено в Челябинске, но купить рекуператор воздуха от НПО Тепловей Вы можете у наших дилеров в #[a.accent-link(href="#!") Москве], #[a.accent-link(href="#!") Санкт-Петербурге], #[a.accent-link(href="#!") Екатеринбурге],  #[a.accent-link(href="#!") Краснодаре], #[a.accent-link(href="#!") Нижнем Новгороде], #[a.accent-link(href="#!") Омске], #[a.accent-link(href="#!") Перми], #[a.accent-link(href="#!") Новосибирске], #[a.accent-link(href="#!") Самаре], #[a.accent-link(href="#!") Уфе] и других городах.

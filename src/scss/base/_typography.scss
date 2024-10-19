@@ -159,8 +159,6 @@ main {
 	
 }
 .single-part +.single-part{margin-top: 40px;}
-
-
 .roboto-accent{
 	font-family: $ft;
 }
@@ -229,7 +227,6 @@ main {
 	}
 	.accent-btn {margin-top: 16px;}
 }
-
 .inner-hero{
 	min-height: 100px;
 	display: flex;
@@ -238,6 +235,7 @@ main {
 	background-position: center;
 	background: #e86b06 url('../img/bg2.webp');
 	padding-block:15px;
+	h1{text-transform: none; font-family: $ff;}
 	&+*{padding-top: 20px;}
 	@media (max-width: 1919px) {
 		background-size: contain;
@@ -345,10 +343,7 @@ main {
 	}
 	li +li{margin-top: 8px;}
 }
-.decore-link{
-	position: relative;
-
-}
+.decore-link{position: relative;}
 .child-mt-25 li+li{margin-top: 25px;}
 .custom-text .decore-list li:after, .decore-list li:after,.decore-link:after{
 	content:'';
@@ -367,9 +362,8 @@ main {
 }
 .custom-text>*{margin-bottom: 10px;}
 .simple-list ul li{
-	color: $gray;
+	color: $text;
 	p{margin-bottom: 0;}
-	
 	transition: .3s;
 	a:hover{color: $accent3;}
 }

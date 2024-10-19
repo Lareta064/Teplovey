@@ -59,6 +59,7 @@ a:has(img){display: block;}
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 30px;
 	.title-29{margin-bottom: 0;}
 	.icon-wrapper{
 		margin-bottom: 10px;
@@ -149,7 +150,10 @@ a:has(img){display: block;}
 	}
 	&>*+*{margin-top: 10px;}
 	ul + *{margin-top: 0;}
-	
+	@media (max-width: 767px) {
+	padding-left: 15px;
+	.contacts-specialist__icon{display: none;}
+	}
 }
 .inner-contacts{
 	padding-top: 40px;

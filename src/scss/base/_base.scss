@@ -66,11 +66,7 @@
     background-image: none;
     }
   }
-  .has-overlay{
-    position: relative;
-   
-    
-  }
+  .has-overlay{position: relative; }
   .overlay{
     position: absolute;
     background: linear-gradient(to right, transparent, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, transparent);
@@ -95,7 +91,10 @@
   a:hover {
 	text-decoration: none;
   }
-  
+    a[href^="mailto:"],
+    a[href^="tel:"]{
+    white-space: nowrap;
+  }
   ul, ol {list-style-type: none;}
   
   h1,

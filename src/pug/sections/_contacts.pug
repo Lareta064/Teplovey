@@ -4,18 +4,19 @@ section.contacts-page.has-overlay.custom-text
 		.contacts-page__content.d-grid-2
 			//==LEFT COLUMN ====
 			.contacts-column
-				.contacts-page__block
-					a(href="tel:+73512200530").acent-link +7 (351) 220-05-30
-					a(href="mailto:teplo@teplovey.ru").acent-link teplo@teplovey.ru
+				.contacts-page__block.flex-column
+					a(href="tel:+73512200530").accent-link.title +7 (351) 220-05-30
+					a(href="mailto:teplo@teplovey.ru").accent-link.title teplo@teplovey.ru
 					a.accent-btn(href="mailto:+73512200530" )
 						svg.svg-check
 							use(href='./img/sprite.svg#svg-check')
 						span Отправить сообщение
 				
-				.contacts-page__block
+				.contacts-page__block.flex-column
 					h2 Каналы и соцсети
-					a(href="#!").acent-link Канал на Rutube
-					a(href="#!").acent-link Канал на Youtube
+					a(href="#!").accent-link Канал на Rutube
+					a(href="#!").accent-link Канал на Youtube
+				
 				.contacts-page__block
 					h2 Офис продаж и инжиниринг
 					ul.flex-list

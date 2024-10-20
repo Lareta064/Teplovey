@@ -171,7 +171,12 @@ select:-webkit-autofill:focus {
   align-items: center;
   column-gap: 20px;
 }
-
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  &>*{width: fit-content;}
+}
 .grid-row, .grid-four-columns, .grid-five-columns{
   display: grid; 
   grid-template-columns: repeat(12, 1fr);

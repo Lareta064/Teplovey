@@ -263,7 +263,7 @@ select:-webkit-autofill:focus {
       grid-column: span 12;
     }
 }
-.d-grid-4 > .grid-column{
+.d-grid-4 > .even-column{
   @media (max-width: 1023px) {
       grid-column: span 6;
     }
@@ -295,23 +295,22 @@ select:-webkit-autofill:focus {
   }
 }
 .d-grid-7>{
-  .grid-col-4{
+  *:nth-child(-n+3) {
     grid-column: span 4;
   }
-  .grid-col-3 {
+  *:nth-child(n+4) {
     grid-column: span 3;
   }
   @media (max-width: 1023px) {
-   .grid-col-3{grid-column: span 4;}
+  *:nth-child(n+4){grid-column: span 4;}
   }
   @media (max-width: 767px) {
-   .grid-col-3,.grid-col-4{
+  *:nth-child(-n+3), *:nth-child(n+4){
     grid-column: span 6;
    }
   }
   @media (max-width: 574px) {
-    .grid-col-3,
-    .grid-col-4 {
+    *:nth-child(-n+3), *:nth-child(n+4) {
       grid-column: span 12;
     }
   }

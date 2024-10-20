@@ -60,7 +60,11 @@ a:has(img){display: block;}
 	flex-direction: column;
 	align-items: center;
 	padding-top: 30px;
-	.title-29{margin-bottom: 0;}
+	.title-29{margin-bottom: 0!important; color: black;text-transform: uppercase;}
+	.title-29 +*{margin-top: 15px;}
+	p{margin-bottom: 0;}
+	a{transition: .3s; }
+	a:hover{color: $accent;}
 	.icon-wrapper{
 		margin-bottom: 10px;
 		display: flex;
@@ -109,7 +113,9 @@ a:has(img){display: block;}
 	text-decoration: underline;
 	
 }
-
+.faq.decore-list{
+	margin-bottom: 0;
+}
 .faq-click-question:hover {
 	cursor: pointer;
 	text-decoration: none;

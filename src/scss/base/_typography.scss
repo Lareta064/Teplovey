@@ -369,6 +369,11 @@
 	background-repeat: no-repeat;
 }
 .custom-text>*{margin-bottom: 10px;}
+.custom-text>.container, .custom-text>.container>*:last-child{margin-bottom: 0;}
+.custom-text>.container>* {
+	margin-bottom: 10px;
+}
+
 .simple-list  li{
 	position: relative;
 	padding-left: 15px;

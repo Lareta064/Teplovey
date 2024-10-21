@@ -2,16 +2,12 @@
 	width: fit-content;
 	position: relative;
 	padding-top: 2px;
+	z-index: 99;
 	.close-btn{
-		position: absolute;
-		top: 50px;
-		right: 50px;
+		
 		z-index: 3;
 	}
-	@media (max-width: 767px) {
-		width: 100%;
-		.close-btn{top: 75px;right: 20px;}
-	}
+	
 }
 
 .select-city {
@@ -34,15 +30,7 @@
 		color: black;
 
 	}
-	.select-city__title{
-		padding: 20px;
-		border-bottom: 2px solid #e5e5e5;
-		font-size: 26px;
-		font-weight: bold;
-		line-height: 28px;
-		color: $accent;
-		
-	}
+	
 }
 
 .select-city .tabs-trigger {

@@ -52,8 +52,8 @@ section.single-product.custom-text.has-overlay
 				
 				//===== кнопки======
 				.flex-row.buttons-row
-					a(href="#!").blue-btn Быстрая заявка
-					a(href="#!").accent-btn
+					a(href="#!" data-target="message-form").blue-btn Быстрая заявка
+					a(href="https://teplovey.ru/services/rekup/").accent-btn
 						svg.svg-check
 							use(href='./img/sprite.svg#svg-check')
 						span Заполнить опросный лист на расчет
@@ -208,8 +208,9 @@ section.single-product.custom-text.has-overlay
 							a(href='https://teplovey.ru/reviews/artikul-rekup/') нашей инструкцией
 					span.faq-click-question Закрыть
 //=======contacts cards ======
-section.inner-contacts
+section.inner-contacts.has-overlay
 	.container
+		.overlay
 		//===contacts cards =====
 		.contacts-cards.d-grid-2
 			//======contacts-card======
@@ -231,7 +232,7 @@ section.inner-contacts
 						a(href="tel:+73512200530").accent-link +7 (351) 220-05-30
 				a(href="#!").accent-link Отправить заявку на рекуператор
 				.contacts-card__btn
-					a.accent-btn(href="#!" ) 
+					a.accent-btn(href="https://teplovey.ru/services/rekup/" ) 
 						svg.svg-check
 							use(href='./img/sprite.svg#svg-check')
 						span Заполнить опросный лист на расчет онлайн

@@ -54,8 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		freeModeMomentum: false,
 
 	});
-});
-document.addEventListener("DOMContentLoaded", function() {
+
     // Определяем ширину экрана
     function isMobile() {
         return window.innerWidth < 1024;
@@ -158,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			tabs.classList.toggle('active');
 			trigger.classList.toggle('open', tabs.classList.contains('active')); // Update trigger class
 		});
-        tabs.querySelector('.close-btn').addEventListener('click', () => {
+        tabs.querySelector('.btn-close').addEventListener('click', () => {
             tabs.classList.remove('active');
             trigger.classList.remove('open');
         });

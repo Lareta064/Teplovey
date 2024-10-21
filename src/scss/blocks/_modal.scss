@@ -1,0 +1,109 @@
+.modal-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(163, 93, 22, 0.8);
+	z-index: 12;
+	display: none;
+@media (max-width: 767px) {
+		padding-top: 40px;
+	}
+	&.active {
+		display: flex;
+	}
+
+	.modal-body {
+		position: relative;
+		width: min(800px, 100%);
+		background: white;
+		box-shadow: 0 0 7px #404040;
+		border:2px solid #333;
+		
+	}
+	.modal-form__wrapper{
+		padding: 20px;
+	}
+	.modal-scroll-wrapper {
+		padding: 0 20px;
+		overflow: hidden;
+		overflow-y: auto;
+		scrollbar-width: none;
+		width: min(800px, 100%);
+        max-height: calc(100vh - 70px);  
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		
+	}
+
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+		&>* {
+			width: 100%;
+		}
+	}
+}
+
+
+.modal-form__title,.select-city__title {
+	padding: 20px;
+	border-bottom: 2px solid #e5e5e5;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 28px;
+	color: $accent;
+	&>*{margin: 0;}
+
+}
+/**************/
+.form-item{
+	position: relative;
+	margin-bottom: 15px;
+	label{
+		display: block;
+		font-size: 15px;
+	}
+}
+.form-item input, .form-item textarea{
+	height: 38px;
+	color: #4f4f4f;
+	border: 1px solid #e0e1e1;
+	background-color: #fcfcfc;
+	padding: 5px 15px 5px 15px;
+	outline: none;
+	&::placeholder{
+		font-family: $ff;
+		font-size: 15px;
+		color: #787d85;
+	}
+}
+.form-item textarea{
+	height: 130px;
+	@media (max-width: 1023px) {
+	height: 80px;
+	}
+}
+.form-confirm{
+	display: flex;
+	column-gap:5px;
+	input[type="checkbox"]{
+		width: 20px;
+		height: 20px;
+		position: relative;
+		top: 1px;
+	}
+	a{
+		display: inline;
+		font-size: inherit;
+	}
+	@media (max-width: 1023px) {
+	font-size: 12px;
+	}
+}

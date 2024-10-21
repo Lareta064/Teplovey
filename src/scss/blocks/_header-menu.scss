@@ -386,3 +386,9 @@ li.drop-menu_4:hover .submenu-5 {
 	 display: block;
 	}
 }
+.drop-menu .menu-item.menu-item--icon{
+	svg{color: #3b3f4a;}
+}
+.drop-menu .menu-item{
+	border-bottom: 1px solid rgba(59, 63, 74, 0.08);
+}

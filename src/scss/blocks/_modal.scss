@@ -1,5 +1,6 @@
 .modal-wrapper {
 	position: fixed;
+	display: flex;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -10,12 +11,14 @@
 	align-items: center;
 	background-color: rgba(163, 93, 22, 0.8);
 	z-index: 12;
-	display: none;
+	transform: scale(0);
+	transition: .3s; 
 @media (max-width: 767px) {
 		padding-top: 40px;
 	}
 	&.active {
-		display: flex;
+		// display: flex;
+		transform: scale(1);
 	}
 
 	.modal-body {

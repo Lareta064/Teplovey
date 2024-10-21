@@ -40,21 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		// Обновляем значение предыдущей ширины
 		lastWindowWidth = currentWindowWidth;
 	});
-
-	/* CLIENTS SLIDER */
-	var clientSlider = new Swiper('.our-clients-swiper',{
-		slidesPerView: 'auto',
-		speed: 3500,
-		loop: true,
-		autoplay:{
-			delay: 0,
-			disableOnInteraction: false,
-		},
-		freeMode: true,
-		freeModeMomentum: false,
-
-	});
-
     // Определяем ширину экрана
     function isMobile() {
         return window.innerWidth < 1024;
@@ -230,4 +215,17 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 		}
 	}
+    /* CLIENTS SLIDER */
+	var clientSlider = new Swiper('.our-clients-swiper',{
+		slidesPerView: 'auto',
+		speed: 3500,
+		loop: true,
+		autoplay:{
+			delay: 0,
+			disableOnInteraction: false,
+		},
+		freeMode: true,
+		freeModeMomentum: false,
+
+	});
 });

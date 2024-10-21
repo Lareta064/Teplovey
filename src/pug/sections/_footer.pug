@@ -21,7 +21,6 @@ footer.footer
 								use(href='./img/sprite.svg#svg-check')
 							span Все контакты
 
-
 	// FOOTER BOTTOM
 	.footer-bottom
 		.container
@@ -35,9 +34,9 @@ footer.footer
 							label.form-item-label(for='search') Поиск:
 							input#search.field.searchform-s(type='text' name='text' placeholder='Для поиска нажмите Enter …')
 				// select-city
-				.select-city
-					span Город:
-					a(href="#!").btn-citypopup Челябинск
+				.select-city-group.flex-row
+					p Город
+					+select-city
 				// apptt-logo
 				.apptt-logo
 					span Продвижение
@@ -59,3 +58,80 @@ footer.footer
 							a(href="#!") Контакты
 						li
 							a(href="#!") Политика конфеденциальности
+
+//=========city select======
+mixin select-city
+	.select-city
+		.select-city-trigger Москва
+		.select-city-tabs
+			.tabs-trigger
+				span.tab-btn.active А
+				span.tab-btn Б
+				span.tab-btn в
+				span.tab-btn г
+				span.tab-btn д
+				span.tab-btn е
+				span.tab-btn ж
+				span.tab-btn з
+				span.tab-btn и
+				span.tab-btn К
+				span.tab-btn л
+				span.tab-btn м
+				span.tab-btn н
+				span.tab-btn о
+				span.tab-btn п
+				span.tab-btn р
+				span.tab-btn с
+				span.tab-btn т
+				span.tab-btn у
+				span.tab-btn ф
+				span.tab-btn х
+				span.tab-btn ц
+				span.tab-btn ч
+				span.tab-btn ш
+				span.tab-btn щ
+				span.tab-btn э
+				span.tab-btn ю
+				span.tab-btn я
+			.tabs-content
+				.tab-item.active
+					span.custom-option(data-value='1') Арзамас
+					span.custom-option(data-value='2') Архангельск
+					span.custom-option(data-value='3') Астрахань
+					span.custom-option(data-value='1') Арзамас
+					span.custom-option(data-value='2') Архангельск
+					span.custom-option(data-value='3') Астрахань
+					span.custom-option(data-value='1') Арзамас
+					span.custom-option(data-value='2') Архангельск
+					span.custom-option(data-value='3') Астрахань
+					span.custom-option(data-value='1') Арзамас
+					span.custom-option(data-value='2') Архангельск
+					span.custom-option(data-value='3') Астрахань
+					span.custom-option(data-value='1') Арзамас
+					span.custom-option(data-value='2') Архангельск
+					span.custom-option(data-value='3') Астрахань
+					span.custom-option(data-value='1') Арзамас
+					span.custom-option(data-value='2') Архангельск
+					span.custom-option(data-value='3') Астрахань
+					span.custom-option(data-value='1') Арзамас
+					span.custom-option(data-value='2') Архангельск
+					span.custom-option(data-value='3') Астрахань
+					span.custom-option(data-value='1') Арзамас
+					span.custom-option(data-value='2') Архангельск
+					span.custom-option(data-value='3') Астрахань
+				.tab-item
+					span.custom-option(data-value='4') Брянск
+					span.custom-option(data-value='5') Белгород
+					span.custom-option(data-value='3') Буйнакск
+					span.custom-option(data-value='4') Брянск
+					span.custom-option(data-value='5') Белгород
+					span.custom-option(data-value='3') Буйнакск
+					span.custom-option(data-value='4') Брянск
+					span.custom-option(data-value='5') Белгород
+					span.custom-option(data-value='3') Буйнакск
+					
+				.tab-item
+					span.custom-option(data-value='6') Воркута
+					span.custom-option(data-value='7') Волгоград
+					span.custom-option(data-value='7') Волгоград
+					span.custom-option(data-value='7') Волгоград

@@ -21,3 +21,15 @@
 	width: auto;
 	height: 50px;
 }
+.close-btn{
+	width: 80px;
+	height: 80px;
+	background-image: url('../img/cross.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor:pointer;
+	transition: .3s; 
+	&:hover{
+		opacity: .5;
+	}
+}

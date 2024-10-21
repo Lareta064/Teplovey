@@ -84,10 +84,17 @@
 	padding-top: 24px;
 	color: rgba(255,255,255, .2);
 }
-.select-city-group.flex-row{column-gap:10px;}
+.select-city-group.flex-row{
+	column-gap:10px;
+	@media (max-width: 767px) {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding-bottom: 0;
+	}
+}
 .apptt-logo{
 	flex-direction: column;
-	padding-top: 0;
+	padding-top: 5px;
 	&__img{opacity: 0.2; margin-top: 5px;}
 }
 .footer-menu{
@@ -104,6 +111,7 @@
 		color: white;
 		column-gap:16px;
 		white-space: nowrap;
+		li+li{margin-top: 0;}
 		@media (max-width: 767px) {
 		  flex-wrap:wrap;
 		  justify-content: center;

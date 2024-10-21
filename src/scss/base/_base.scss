@@ -108,9 +108,10 @@
   }
  ul{
   list-style-type: none;
+  li{text-align: left;flex-wrap:wrap;}
   li +li{margin-top: 4px;}
  }
- .simple-list ul {list-style-type: disc;}
+
   
   img {
 	max-width: 100%;
@@ -263,7 +264,7 @@ select:-webkit-autofill:focus {
       grid-column: span 12;
     }
 }
-.d-grid-4 > .even-column{
+.d-grid-4.even-column > *{
   @media (max-width: 1023px) {
       grid-column: span 6;
     }

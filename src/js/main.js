@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // моб меню - показать по клику га бургер-иконку
+    $('lazy').lazy();
+    // моб меню - показать по клику на бургер-иконку
 	const bodyEl = document.body;
 	
 	const mobMenu = document.querySelector('#mob-menu');

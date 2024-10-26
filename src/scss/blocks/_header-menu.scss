@@ -154,7 +154,7 @@
 	position: absolute;
 	left: -20px;
 	top: 100%;
-	z-index: 3;
+	z-index: 4;
 	width: 300px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -386,3 +386,13 @@ li.drop-menu_4:hover .submenu-5 {
 	 display: block;
 	}
 }
+@media (max-width: 1023px) {
+.drop-menu .menu-item.menu-item--icon{
+	svg{color: #3b3f4a;}
+
+}
+.drop-menu .menu-item{
+	border-bottom: 1px solid rgba(59, 63, 74, 0.08);
+}
+}
+

@@ -3,24 +3,23 @@ footer.footer
 		.container
 			.footer-row.flex-row
 				.footer-logo
-					img(src="./img/logo-white.webp", width="400" height="80" alt="logo")
+					img.lazy(src="./img/logo-white.webp", width="400" height="80" alt="logo")
 				.footer-contacts.flex-row
 					.contacts-group
 						a(href="+73512200530").special-link
 							span.txt-light +7 (351)
 							span.txt-bold 220-05-30
-						a.accent-btn.btn-smpopup(href="/contacts/" title="Отправить сообщение") 
+						a.accent-btn.btn-smpopup(href="#!" data-target="message-form"  title="Отправить сообщение") 
 							svg.svg-check
 								use(href='./img/sprite.svg#svg-check')
-							span Заказать звонок
+							span Отправить сообщение
 					
 					.contacts-group
 						address Челябинск,<br>пр. Ленина, 21-в
-						a.accent-btn(href="#!" )
+						a.accent-btn(href="contacts.html" )
 							svg.svg-check
 								use(href='./img/sprite.svg#svg-check')
 							span Все контакты
-
 
 	// FOOTER BOTTOM
 	.footer-bottom
@@ -35,14 +34,14 @@ footer.footer
 							label.form-item-label(for='search') Поиск:
 							input#search.field.searchform-s(type='text' name='text' placeholder='Для поиска нажмите Enter …')
 				// select-city
-				.select-city
-					span Город:
-					a(href="#!").btn-citypopup Челябинск
+				.select-city-group.flex-row
+					p Город
+					+select-city
 				// apptt-logo
 				.apptt-logo
 					span Продвижение
-					.apptt-logo__img
-						img(src="./img/appetty.webp", width="110" height="35" alt="appetty-logo")
+					a(href="https://appetty.ru/?utm_source=teplovey&amp;utm_medium=ref&amp;utm_campaign=footerlogo" target="_blank").apptt-logo__img
+						img.lazy(src="./img/appetty.webp", width="110" height="35" alt="appetty-logo")
 				
 				//FOOTER MENU
 				.footer-menu
@@ -59,3 +58,59 @@ footer.footer
 							a(href="#!") Контакты
 						li
 							a(href="#!") Политика конфеденциальности
+
+//=======popup, открывается при клике по компоненту с дата атрибутом data-target="call-form"
+.modal-wrapper(data-modal="call-form")
+	//===btn close popup ===
+	button(type="button" data-role="modal-close").btn-close
+	.modal-scroll-wrapper
+		.modal-body
+			.modal-form
+				.modal-form__title
+					h2 Заказать звонок
+				.modal-form__wrapper
+					form.contact-form(action="#")
+						.form-item
+							label Ваше имя
+							input(type="text" name="name" )
+						
+						.form-item
+							label Телефон (обязательно)
+							input(type="text" name="phone")
+						.form-item
+							label Сообщение
+							textarea(name="message" placeholder="Меня интересует...")
+						.form-item.form-confirm
+							input(type="checkbox" name="form_confirm")
+							p  Отправляя данные, я даю согласие на обработку персональных данных в соответствии с #[a(href="#!").accent-link Политикой конфиденциальности]
+						.form-btn
+							button.accent-btn(type="submit") Заказать звонок
+//=======popup, открывается при клике по компоненту с дата атрибутом data-target="call-form"
+.modal-wrapper(data-modal="message-form")
+	//===btn close popup ===
+	button(type="button" data-role="modal-close").btn-close
+	.modal-scroll-wrapper
+		.modal-body
+			.modal-form
+				.modal-form__title
+					h2 Отправить сообщение
+				.modal-form__wrapper
+					form.contact-form(action="#")
+						.form-item
+							label Ваше имя
+							input(type="text" name="name" )
+						.form-item
+							label Ваш e-mail (обязательно)
+							input(type="text" name="phone")
+						
+						.form-item
+							label Телефон (обязательно)
+							input(type="text" name="phone")
+						.form-item
+							label Сообщение
+							textarea(name="message" placeholder="Меня интересует...")
+						.form-item.form-confirm
+							input(type="checkbox" name="form_confirm")
+							p  Отправляя данные, я даю согласие на обработку персональных данных в соответствии с #[a(href="#!").accent-link Политикой конфиденциальности]
+						.form-btn
+							button.accent-btn(type="submit") Отправить

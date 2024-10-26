@@ -1,0 +1,25 @@
+extends ../layouts/layout.pug
+
+block content
+	.page-wrapper
+		//HEADER
+		include ../sections/_header.pug
+		//MAIN
+		main.inner-main
+			.inner-hero
+				.container
+					h1 Контакты
+					ul.breadcrumbs
+						li
+							a(href="index.html") Главная
+						li
+							a(href="#!") Контакты
+						
+			
+			include ../sections/_contacts.pug
+		//FOOTER
+		include ../sections/_footer.pug
+	
+	
+block variables
+	-var title = "Контакты";

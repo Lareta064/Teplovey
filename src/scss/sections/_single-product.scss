@@ -1,0 +1,20 @@
+
+.single-product__img{
+	padding-top: 50px;
+	img{
+		width: 100%;
+		max-height: 390px;
+		object-fit: contain;
+	}
+	@media (max-width: 767px) {
+	  padding-top: 0;
+	}
+}
+.buttons-row{
+	column-gap:10px;
+	@media (max-width: 767px) {
+	  flex-direction: column;
+	  row-gap:10px;
+	  &>*{width: 100%;}
+	}
+}

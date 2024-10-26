@@ -1,0 +1,25 @@
+.model-card{
+	color: #4f4f4f;
+	padding-bottom: 5px;
+	img{
+		width: 100%;
+		height: 140px;
+		margin-inline: auto;
+		object-fit: contain;
+		margin-bottom: 10px;
+	}
+	ul{
+		list-style-type: none;
+		margin-block:10px;
+		li {
+				color: #4f4f4f;
+			}
+	}
+	.accent-btn{
+		margin-inline: auto;
+		display: block;
+		width: fit-content;
+		// min-width: unset;
+		
+	}
+}

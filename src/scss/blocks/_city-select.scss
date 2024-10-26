@@ -1,0 +1,129 @@
+.select-city {
+	width: fit-content;
+	position: relative;
+	padding-top: 2px;
+	z-index: 99;
+	.close-btn{
+		
+		z-index: 3;
+	}
+	
+}
+
+.select-city {
+	.select-city-trigger {
+		width: fit-content;
+		cursor:pointer;
+		&:hover{
+			color: rgba(255,255,255, .8);
+		}
+	}
+
+	.select-city-trigger.open:after {
+		transform: rotate(180deg);
+	}
+	.select-city-content{
+		border: 2px solid #333333;
+		background-color: #fff;
+		width: 100%;
+		max-width: 715px;
+		color: black;
+
+	}
+	
+}
+
+.select-city .tabs-trigger {
+	display: flex;
+	gap: 5px;
+	padding: 10px 30px;
+	justify-content: center;
+	flex-wrap: wrap;
+	@media (max-width: 1023px) {
+		margin-inline: auto;
+		flex-wrap: wrap;
+		row-gap: 10px;
+	}
+}
+
+.select-city .tab-btn {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 6px 15px 6px 15px;
+	background-color: transparent;
+	border-radius: 100px;
+	transition: .3s;
+	line-height: 1;
+	&:hover {color: $accent;}
+}
+
+.select-city .tab-btn.active {
+	background-color: $accent;
+	color: white;
+}
+
+.select-city .tab-item {
+	display: none;
+	padding: 10px 20px;
+
+	.custom-option {
+		padding: 0;
+		font-size: 12px;
+		transition: .3s;
+		color: $accent;
+		font-size: 15px;
+		text-decoration: underline;
+		&:hover {
+			background-color: transparent;
+			opacity: .7;
+		}
+	}
+}
+
+.select-city .tab-item.active {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.select-city .select-city-tabs {
+	display: none;
+	position: fixed;
+	z-index: 5;
+	inset:0;
+	background-color: rgba(163, 93, 22, 0.8);
+	.tabs-content {
+		max-height: 110px;
+		min-height: 90px;
+		overflow: hidden;
+		overflow-y: auto;
+		scrollbar-width: thin;
+		scrollbar-color: #dadada transparent;
+
+		&::-webkit-scrollbar {
+			width: 3px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			width: 3px;
+			border-radius: 5px;
+			height: 20px;
+			background-color: #dadada;
+		}
+
+		&::-webkit-scrollbar-track {
+			width: 3px;
+			border-radius: 5px;
+			background-color: transparent;
+		}
+	}
+}
+
+.select-city-tabs.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:20px;
+}

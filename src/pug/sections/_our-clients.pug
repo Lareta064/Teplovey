@@ -3,7 +3,7 @@ mixin client-slider(count)
 	while n < count
 		.swiper-slide
 			.clients-item
-				img(src="./img/slide"+ n++ +".webp", height="60" alt="logo")
+				img.lazy(src="./img/slide"+ n++ +".webp", height="60" alt="logo")
 	
 //CLIENTS
 section.our-clients

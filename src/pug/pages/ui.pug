@@ -1,0 +1,148 @@
+extends ../layouts/layout.pug
+
+block content
+	.page-wrapper.start-page
+		.container
+			h1 ui
+			p Контент, который набирается из админки и нет возможности прописать индивидуальные классы, должен быть вложен в компонент с классом #[big #[strong custom-text]]
+			hr
+			p Контент внутри класса #[big #[strong scroll-horizontal]], если не помещаюется по  ширине, будет свайпиться вправо/влево. Так реализовано для таблиц, на моб версии он перемещаются вправо / влево при свайпе
+			hr
+			p класс #[big #[strong mt-10]] дает внешний отступ вверх на 10 пикс
+			p класс #[big #[strong mt-20]] дает внешний отступ вверх на 20 пикс
+			p класс #[big #[strong mt-40]] дает внешний отступ вверх на 40 пикс
+			p класс #[big #[strong p-block-40]] дает внутренние отступы сверху и снизу по 40 пикс
+			
+			h2 Сетка
+			pre.
+				class="d-grid-2" - внутри два дочерних блока первого уровня
+			.d-grid-2
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+			
+			hr
+			pre.
+				class="d-grid-3" - внутри 3 дочерних блока первого уровня
+			.d-grid-3
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+			
+			hr
+			pre.
+				class="d-grid-4" - внутри 4 дочерних блока первого уровня
+			.d-grid-4
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				
+			hr
+			pre.
+				class="d-grid-4 even-column" - внутри 4 дочерних блока первого уровня и на промежуточных экранах нет построения по три колонки. Всегда четное число колонок 
+			.d-grid-4.even-column
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+			
+			pre.
+				class="d-grid-5" - внутри 5 дочерних блоков первого уровня	
+			.d-grid-5
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+			hr
+			pre.
+				class="d-grid-6" - внутри 6 дочерних блоков первого уровня	
+			.d-grid-6
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+			pre.
+				class="d-grid-7" - внутри 7 дочерних блоков первого уровня	
+			.d-grid-7
+				.block.grid-col-4(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block.grid-col-4(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block.grid-col-4(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block.grid-col-3(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block.grid-col-3(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block.grid-col-3(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block.grid-col-3(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+			hr
+			pre.
+				class="grid-aside-right" - внутри два дочерних блока первого уровня
+			.grid-aside-right
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+			hr
+			pre.
+				class="grid-aside-left" - внутри два дочерних блока первого уровня
+			.grid-aside-left
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+				.block(style="height:80px; text-align: center; border:5px solid lightBlue;")
+					h3 block
+
+			h2 Списки
+			pre.
+				ul.decore-list
+			ul.decore-list
+				li Список с декративными маркерами
+				li Список с декративными маркерами
+				li Список с декративными маркерами
+			hr
+			pre.
+				ul.simple-list
+			ul.simple-list
+				li Список с точками маркерами
+				li Список с точками маркерами
+				li Список с точками маркерами	
+			hr
+			pre.
+				ul.flex-list
+			ul.flex-list
+				li Список, когда #[strong строка] списка содержит #[span.txt-accent несколько тегов]
+				li Список, когда #[strong строка] списка содержит #[span.txt-accent несколько тегов]
+				li Список, когда #[strong строка] списка содержит #[span.txt-accent несколько тегов]
+
+block variables
+	-var title = "Home";

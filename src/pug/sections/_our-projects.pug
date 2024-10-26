@@ -1,44 +1,20 @@
 // OUR PROJECTS 
-section.our-projects
+section.our-projects.has-overlay
 	.section-title
 		h2.title Выполненные проекты
 	.container
-		// класс p-block-40 дает вертикальные отступы по 40 пикс, bg-white - дает белый фоновый цвет, .grid-four-columns - 4 колонки, .single-part--hover - подчеркивание заголовка по ховеру над секцией
+		.overlay
 		.projects-content.p-block-40
 			//===SINGLE CATEGORY ===
 			.single-part
 				h3.h3.txt-accent Выполненные проекты
 				
-				.grid-four-columns
-					.grid-col-3
-						a(href="#!").prod-link
-							.img-wrap
-								img(src="./img/proj1.webp", width="300" height="170" alt="img")
-							.prod-link__body
-								.accent-link Сушильный цех с рекуператором
-								p Цех работает уже более 2х лет и рекуператор снижает мощность на нагрев не менее, чем вдвое
-					.grid-col-3
-						a(href="#!").prod-link
-							.img-wrap
-								img(src="./img/proj2.webp", width="300" height="170" alt="img")
-							.prod-link__body
-								.accent-link Рекуператор для макаронного цеха
-								p Рекуператор работает с температурой до 70° С и высоким влагосодержанием
-					.grid-col-3
-						a(href="#!").prod-link
-							.img-wrap
-								img(src="./img/proj3.webp", width="300" height="170" alt="img")
-							.prod-link__body
-								.accent-link ПВУ с рекуперацией для пиццерии
-								p Система вентиляции с канальным рекуператором производительностью 3500 м3/час
-					.grid-col-3
-						a(href="#!").prod-link
-							.img-wrap
-								img(src="./img/proj4.webp", width="300" height="170" alt="img")
-							.prod-link__body
-								.accent-link ПВУ с рекуперацией для Алвид
-								p Смонтирована приточно-вытяжная установка с рекуперацией на 65000 м3/час и блоком нагрева на 580 кВт
-
+				.d-grid-4
+					+product-card('proj1', 'Сушильный цех с рекуператором', 'Цех работает уже более 2х лет и рекуператор снижает мощность на нагрев не менее, чем вдвое')
+					+product-card('proj2', 'Рекуператор для макаронного цеха', 'Рекуператор работает с температурой до 70° С и высоким влагосодержанием')
+					+product-card('proj3', 'ПВУ с рекуперацией для пиццерии', 'Система вентиляции с канальным рекуператором производительностью 3500 м3/час')
+					+product-card('proj4', 'ПВУ с рекуперацией для Алвид', 'Смонтирована приточно-вытяжная установка с рекуперацией на 65000 м3/час и блоком нагрева на 580 кВт')
+					
 				.mt-40
 					a(href="#!").arrow-link
 						span.accent-link Все выполненные проекты

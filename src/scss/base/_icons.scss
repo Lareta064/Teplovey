@@ -16,3 +16,29 @@
 	width: 28px;
 	height: 28px;
 }
+.svg-calendar, .svg-medal, .svg-clock, .svg-industry,
+.svg-map-pin, .svg-thumbs-up, .svg-wrench, .circle-question{
+	width: auto;
+	height: 50px;
+}
+.btn-close{
+	width: 80px;
+	height: 80px;
+	background-image: url('../img/cross.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor:pointer;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	transition: .3s;
+	@media (max-width: 1023px) {
+	width: 30px;
+	height: 30px;
+	top: 20px;
+	right: 20px;
+	}
+	&:hover{
+		opacity: .5;
+	}
+}

@@ -1,0 +1,33 @@
+.inner-hero__image{
+	width: 270px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.inner-hero__text{
+	max-width: 840px;
+	font-size: 24px;
+	color: #000;
+	&>*+*{margin-top: 10px;}
+	h3, h2{
+		font-family: $fs;
+		color: white;
+		text-transform: uppercase;
+	}
+	.txt-18{line-height: 1.6;}
+}
+.inner-hero__row{
+	justify-content: space-between;
+	align-items: center;
+	padding-block: 35px;
+	@media (max-width: 767px) {
+		flex-direction: column;
+		row-gap:30px;
+		padding-block: 15px;
+	}
+}

@@ -1,0 +1,27 @@
+extends ../layouts/layout.pug
+
+block content
+	.page-wrapper
+		//HEADER
+		include ../sections/_header.pug
+		//MAIN
+		main.inner-main
+			.inner-hero
+				.container
+					.inner-hero__row.flex-row
+						.inner-hero__text
+							p Общество с ограниченной ответственностью 						«Научно-производственное объединение «Тепловей» —
+
+							h3.title-24 это один из лидеровна российском<br> рынке воздухонагревателей,
+							p.txt-18 располагающий собственным конструкторским и производственным потенциалом, 	позволяющим производить полный цикл работ – от разработки изделия «с нуля», 	до изготовления оборудования любой сложности.
+						.inner-hero__image
+							img(src="./img/logo-mini.webp", width="117" height="84" alt="logo")
+			
+			include ../sections/_about.pug
+
+		//FOOTER
+		include ../sections/_footer.pug
+	
+	
+block variables
+	-var title = "О нас";

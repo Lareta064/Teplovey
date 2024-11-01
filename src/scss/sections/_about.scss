@@ -31,3 +31,32 @@
 		padding-block: 15px;
 	}
 }
+.about-page__assort{
+	padding-block:40px;
+	@media (max-width: 767px) {
+	padding-top: 0;
+	}
+}
+.about-page__assort .txt-accent{
+	font-size: 62px;
+	margin-top: 15px;
+	span{font-size: 0.5em;}
+}
+.about-page-gallery{
+	border-top: 2px solid $accent;
+	img{
+		width: auto;
+		max-height: 290px;
+		object-fit: contain;
+		@media (max-width: 1699px) {
+			width: 100%;
+			max-width: 390px;
+			height: auto;
+		}
+	}
+	@media (max-width: 767px) {
+	  flex-direction: column;
+	  row-gap: 20px;
+	 
+	}
+}

@@ -65,6 +65,9 @@
 .txt-18{
 	font-size: 18px;
 }
+.txt-24 {
+	font-size: 24px;
+}
 .title-24{
 	font-size: 24px;
 	line-height: 1.4;
@@ -190,7 +193,7 @@
 		svg{color: $accent;}
 	}
 }
-.txt-accent, .roboto-accent{color: $accent;}
+.txt-accent, .roboto-accent{color: $accent!important;}
 .decore-link{padding-left: 18px;}
 .accent-link,.decore-link{
 	color: $accent3;
@@ -347,7 +350,7 @@
 	}
 	h3, h5{color: black;}
 	h5, p{margin:0;margin-bottom: 10px; text-transform: none;}
-	p{line-height: 24px; color: #4f4f4f;}
+	p{line-height: 1.5; color: #4f4f4f;}
 
 }
 .custom-text .decore-list, .decore-list{

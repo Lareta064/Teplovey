@@ -217,7 +217,8 @@ select:-webkit-autofill:focus {
 .d-grid-2, .d-grid-3,
 .d-grid-4,.cards-grid-4,
 .d-grid-5,
-.d-grid-6,.d-grid-7{
+.d-grid-6,.d-grid-7,
+.grid-aside-7-5{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
@@ -338,10 +339,21 @@ select:-webkit-autofill:focus {
   
   }
 }
-.p-block-40{
-  padding-block:40px 60px;
- 
+.grid-aside-7-5{
+  &>*:first-child{grid-column:span 7;}
+  &>*:last-child {grid-column:span 5; }
+  @media (max-width: 767px) {
+  &>*:first-child,&>*:last-child {
+      grid-column: span 12;
+    }
+  
+  }    
+   
 }
+.p-block-40{ padding-block:40px 60px;}
+ .p-40{padding-block: 40px;}
+ 
+
 .mt-40 {
   margin-top: 40px!important;
   @media (max-width: 1023px) { margin-top: 32px!important; }

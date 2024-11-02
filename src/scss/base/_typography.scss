@@ -1,4 +1,4 @@
-.h1, .h2, .title, .h3{
+.h1, .h2, .title, .h3, h3{
 	font-family: $fs;
 	font-weight: 700;
 }
@@ -53,8 +53,11 @@
 	text-transform: uppercase;
  }
  h2[class]{margin-top: 0;}
-.h3{
+.h3, h3{
 	font-size: 22px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
 }
 .title{
 	font-size: 32px;
@@ -338,7 +341,7 @@
 	}
 	h2, h3{
 		font-size: 22px;
-		line-height: 26px;
+		line-height: 1.2;
 		margin-top: 40px;
 		margin-bottom: 15px;
 	}

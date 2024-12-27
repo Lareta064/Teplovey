@@ -213,6 +213,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		for(let modalClose of modalCloseButtons){
 			modalClose.addEventListener('click', (e)=>{
 				modalClose.closest('.modal-wrapper').classList.remove('active');
+                if(modalClose.closest('.modal-wrapper').classList.contains('ult-open')){
+                    modalClose.closest('.modal-wrapper').classList.remove('ult-open');
+                }
 				bodyEl.classList.remove('lock');
 			});
 		}
@@ -221,6 +224,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			modal.addEventListener('click', (e)=>{
 				if(e.target == e.currentTarget){
 					modal.classList.remove('active');
+                    if(modal.classList.contains('ult-open')){
+                        modal.classList.remove('ult-open');
+                    }
 					bodyEl.classList.remove('lock');
 				}
 			});
@@ -239,4 +245,5 @@ document.addEventListener("DOMContentLoaded", function () {
 		freeModeMomentum: false,
 
 	});
+   
 });

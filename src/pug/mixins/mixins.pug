@@ -7,3 +7,10 @@ mixin product-card(img, title, txt)
 		if txt
 			.product-card__txt
 				p !{txt}
+
+mixin client-slider(count)
+	- var n = 1
+	while n < count
+		.swiper-slide
+			.clients-item
+				img.lazy(src="./img/slide"+ n++ +".webp", height="60" alt="logo")

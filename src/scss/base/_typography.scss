@@ -61,10 +61,14 @@
 }
 .title{
 	font-size: 32px;
+	margin-bottom: 15px;
+	display: block;
 	@media (max-width: 767px) {
 	  font-size: 26px;
 	}
 }
+span.title{margin-bottom: 0;}
+.no-upper{text-transform: none!important;}
 .txt-18{
 	font-size: 18px;
 }

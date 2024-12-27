@@ -110,3 +110,7 @@
 	font-size: 12px;
 	}
 }
+#cbpopup{display: none;}
+#cbpopup.ult-open{display: flex; transform: scale(1);}
+p>a.accent-link{display: inline;}
+.filters-dropdown__title{font-size: auto;}

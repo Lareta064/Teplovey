@@ -30,12 +30,7 @@
 		padding-block: 15px;
 	}
 }
-.about-page__assort{
-	// padding-block:40px;
-	// @media (max-width: 767px) {
-	// padding-top: 0;
-	// }
-}
+
 .about-page__assort .txt-accent{
 	font-size: 62px;
 	margin-top: 15px;
@@ -60,7 +55,6 @@
 	@media (max-width: 767px) {
 	  flex-direction: column;
 	  row-gap: 20px;
-	 
 	}
 }
 .gallery-grid{
@@ -98,7 +92,6 @@
 	grid-area: unset;
 	}
 }
-
 .gallery-grid__item:nth-child(3) {
 	grid-area: 3 / 3 / 5 / 4;
 	@media (max-width: 1199px) {
@@ -108,7 +101,6 @@
 	grid-area: unset;
 	}
 }
-
 .gallery-grid__item:nth-child(4) {
 	grid-area: 1 / 4 / 3 / 5;
 	@media (max-width: 1199px) {
@@ -118,7 +110,6 @@
 	grid-area: unset;
 	}
 }
-
 .gallery-grid__item:nth-child(5) {
 	grid-area: 3 / 4 / 5 / 5;
 	@media (max-width: 1199px) {
@@ -126,5 +117,25 @@
 	}
 	@media (max-width: 767px) {
 	grid-area: unset;
+	}
+}
+.logo-title{
+	margin-bottom: 50px;
+}
+.our-history{
+	h1{margin-bottom: 70px;}
+}
+.our-dealers{
+	align-items: center;
+	color:#4f4f4f;
+	&__img{flex-grow:1;}
+	&__txt{
+		flex-shrink: 0;
+		max-width: 495px;
+		p{margin-bottom: 10px;}
+	}
+	@media (max-width: 1023px) {
+	 flex-direction: column;
+	 row-gap:40px;
 	}
 }

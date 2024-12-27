@@ -85,8 +85,37 @@ footer.footer
 							p  Отправляя данные, я даю согласие на обработку персональных данных в соответствии с #[a(href="#!").accent-link Политикой конфиденциальности]
 						.form-btn
 							button.accent-btn(type="submit") Заказать звонок
-//=======popup, открывается при клике по компоненту с дата атрибутом data-target="call-form"
+//=======popup, открывается при клике по компоненту с дата атрибутом data-target="message-form"
 .modal-wrapper(data-modal="message-form")
+	//===btn close popup ===
+	button(type="button" data-role="modal-close").btn-close
+	.modal-scroll-wrapper
+		.modal-body
+			.modal-form
+				.modal-form__title
+					h2 Отправить сообщение
+				.modal-form__wrapper
+					form.contact-form(action="#")
+						.form-item
+							label Ваше имя
+							input(type="text" name="name" )
+						.form-item
+							label Ваш e-mail (обязательно)
+							input(type="text" name="phone")
+						
+						.form-item
+							label Телефон (обязательно)
+							input(type="text" name="phone")
+						.form-item
+							label Сообщение
+							textarea(name="message" placeholder="Меня интересует...")
+						.form-item.form-confirm
+							input(type="checkbox" name="form_confirm")
+							p  Отправляя данные, я даю согласие на обработку персональных данных в соответствии с #[a(href="#!").accent-link Политикой конфиденциальности]
+						.form-btn
+							button.accent-btn(type="submit") Отправить
+//======popup подбор рекуператора =====
+.modal-wrapper#cbpopup
 	//===btn close popup ===
 	button(type="button" data-role="modal-close").btn-close
 	.modal-scroll-wrapper

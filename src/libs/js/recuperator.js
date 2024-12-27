@@ -130,9 +130,11 @@ function recuperatorForm() {
     if ( modalFeedback !== undefined && modalMessage !== undefined) {
         modalFeedback.classList.add("ult-open");
 
-        msg = `РњРµРЅСЏ РёРЅС‚РµСЂРµСЃСѓРµС‚: `;
-        msg += event.target.parentElement.querySelector(".filter-result-item__title").textContent.replace(/\n/g, " ").replace(/  +/g, ' ');
-        msg += event.target.parentElement.querySelector(".filter-result-item__options").textContent.replace(/\n/g, " ").replace(/  +/g, ' ');
+        msg = `Меня интересует:  `;
+        const currentMsgParent = event.target.parentElement;
+       
+        msg += currentMsgParent.parentElement.querySelector(".filter-result-item__title").textContent.replace(/\n/g, " ").replace(/  +/g, ' ');
+        msg += currentMsgParent.parentElement.querySelector(".filter-result-item__options").textContent.replace(/\n/g, " ").replace(/  +/g, ' ');
 
         modalMessage.value = msg;
     }

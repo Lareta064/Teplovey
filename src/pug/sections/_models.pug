@@ -82,16 +82,16 @@ section.models.has-overlay
 				.model-card
 					a(href="#!").model-card__link
 						img.lazy(src="./img/model-variant.webp",  width="380" height="242" alt="img")
-						.accent-link Противоточный рекуператор PSV.RPL.80.30.33.06.1
+						.accent-link.filter-result-item__title Противоточный рекуператор PSV.RPL.80.30.33.06.1
 					.model-card__body
-						ul
+						ul.filter-result-item__options
 							li Компоновка: #[strong Моноблок] #[a.info-link(href="#!") i]
 							li Тип: #[strong Противоточный]
 							li Макс. расход при 4 м/с: #[strong 540 м3/с]
 							li Макс. расход при 6 м/с: #[strong 810 м3/с]
 							li Макс. расход при 8 м/с: #[strong 1080 м3/с]
 							li Цена: по запросу
-						a(href="#!").accent-btn Заказать
+						a(href="#!" onclick="recuperatorForm()").accent-btn Заказать
 				.model-card
 					a(href="#!").model-card__link
 						img.lazy(src="./img/model-variant.webp",  width="380" height="242" alt="img")
